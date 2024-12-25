@@ -14,7 +14,7 @@ const NavBar = () => {
                 <a className="NavItem" href="">About</a>
                 <a className="NavItem" href="">Pricing</a>
             </div>
-            <a className="NavCTA" href="/contact">Book a Call!</a>
+            <a className="CTA" href="/contact">Book a Call!</a>
         </div>
         </>
     )

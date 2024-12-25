@@ -1,4 +1,6 @@
 .NavBar {
+    top: 0;
+    position: sticky;
     display: flex;
     background-image: linear-gradient(#303030, #00000000);
     justify-content: space-between;
@@ -8,6 +10,7 @@
     padding-right: 55px;
     padding-bottom: 50px;
     z-index: 2;
+    gap: 300px;
 }
 
 .CenterNav {
@@ -22,15 +25,3 @@
     font-weight: 600;
 }
 
-.NavCTA {
-     color: #0B4B25 ;
-     background-color: white;
-     border-radius: 15px;
-     padding-left: 35px;
-     padding-right: 35px;
-     padding-bottom: 15px;
-     padding-top: 15px;
-     font-family: Instrument Sans;
-     font-weight: 600;
-     font-size: 18px;
-}
