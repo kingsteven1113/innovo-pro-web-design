@@ -1,16 +1,21 @@
 .NavBar {
-    top: 0;
-    position: sticky;
     display: flex;
-    background-image: linear-gradient(#303030, #00000000);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: 30px;
     padding-left: 55px;
     padding-right: 55px;
     padding-bottom: 50px;
-    z-index: 2;
-    gap: 300px;
+    gap: 200px;
+}
+
+.CenteringNav {
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-image: linear-gradient(#303030, #00000000);
 }
 
 .CenterNav {

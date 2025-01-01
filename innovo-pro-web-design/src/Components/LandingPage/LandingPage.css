@@ -1,18 +1,41 @@
 .HeroSection {
-  background-image: url('../../assets/HeroBackground.svg');
-  background-size: cover;
+  clip-path: content-box;
+  
+  height: 930px;
+}
+
+.HeroBackgroundImage {
+  z-index: 0;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  
+  filter: brightness(80%) blur(7px);
+  
+}
+
+.ComputerDesign {
+  margin-top: 250px;
+  z-index: 2;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  filter:  blur(1px);
 }
 
 .HeroTopLayer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 3;
+  
 }
 
 .HeroHeaders {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 67px;
 }
 
 .CompanyName {
@@ -21,10 +44,95 @@
   text-transform: uppercase;
   letter-spacing: 8px;
   font-weight: 600;
+  margin-top: 140px;
+  filter: drop-shadow(5px 7px 11px #00000050);
 }
 .H1 {
   margin: 0;
   font-size: 96px;
   font-family: Instrument Sans;
-  filter: drop-shadow(12px, 15px, 11px, #00000025);
+  filter: drop-shadow(12px 15px 11px #00000050);
+}
+
+.HeroParagraph {
+  margin-top: 300px;;
+  font-size: 36px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  filter: drop-shadow(5px 20px 11px #00000050);
+}
+
+.HeroCTA {
+  justify-content: center;
+  filter: drop-shadow(0px 0px 10px #d9ff0180);
+}
+
+.HeroSectionGrid {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 0px;
+  gap: 15px;
+  z-index: 1;
+}
+
+.HeroSectionBox {
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0px 0px 20px #ffffff05, 0px 0px 20px #ffffff05;
+  background-color: #ffffff05;
+  border-radius: 15px;
+}
+
+.LogoInBox {
+  justify-content: center;
+  align-content: center;
+}
+.BackgroundLogos {
+  filter: opacity(30%);
+}
+
+.ProcessSectionHeader {
+  display: flex;
+  margin-left: 175px;
+  gap: 50px;
+  align-items: center;
+}
+
+.ProcessHeader {
+  font-size: 64px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  filter: drop-shadow(5px 20px 11px #00000050);
+}
+
+.Process-Item {
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0px 0px 20px #ffffff05, 0px 0px 20px #ffffff05;
+  background-color: #ffffff05;
+  border-radius: 15px;
+}
+
+.ProcessDiagram {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 0px;
+  gap: 15px;
+  z-index: 1;
+}
+
+.ProcessDiagram p {
+    color: #87C440;
+    font-size: 36px;
+    font-family: Instrument Sans;
+    font-weight: 600;
+    filter: drop-shadow(5px 20px 11px #00000050);
+  
 }
