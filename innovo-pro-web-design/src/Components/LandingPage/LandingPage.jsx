@@ -12,6 +12,7 @@ import HeaderBreadcrumb1 from '../../assets/HeaderBreadcrumb1.svg'
 import Discuss from '../../assets/Discuss.svg'
 import Diagnose from '../../assets/Diagnose.svg'
 import Deploy from '../../assets/Deploy.svg'
+import DottedLine from '../../assets/Dotted Line.svg'
 
 const LandingPage = () => {
   return (
@@ -67,11 +68,19 @@ const LandingPage = () => {
             <p>Discuss</p>
           </div>
           <div className='Process-Item LogoInBox'>
-            <div className='MultiLogo'><img src="" alt="" /></div>
+            <div className='MultiLogo2'>
+              <img src={FigmaLogo} alt="" />
+              <img src={AdobeLogo} alt="" />
+            </div>
             <p>Design</p>
           </div>
           <div className='Process-Item LogoInBox'>
-          <div className='MultiLogo'><img src="" alt="" /></div>
+          <div className='MultiLogo4'>
+            <img src={HTMLLogo} alt="" />
+            <img src={CSSLogo} alt="" />
+            <img src={JSLogo} alt="" />
+            <img src={ReactLogo} alt="" />
+          </div>
             <p>Develop</p>
           </div>
           <div className='Process-Item LogoInBox'>
@@ -83,8 +92,8 @@ const LandingPage = () => {
             <p>Deploy</p>
           </div>
         </div>
-        <img src="" alt="" />
-          <p>We have developed a smooth clean procces from an idea for a website to a fully built website that is ready for the world to experience. You will be a part of the entire process and this process leads to communitcating with us throughout each step so that the end product is something you're happy with and something we can be proud of.</p>
+        <img className='DottedLine' src={DottedLine} alt="" />
+        <p className='Process-Paragraph'>We have developed a smooth clean procces from an idea for a website to a fully built website that is ready for the world to experience. You will be a part of the entire process and this process leads to communitcating with us throughout each step so that the end product is something you're happy with and something we can be proud of.</p>
       </div>
     </section>
     </>
