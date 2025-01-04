@@ -1,7 +1,7 @@
 .HeroSection {
   clip-path: content-box;
   
-  height: 930px;
+  height: 980px;
 }
 
 .HeroBackgroundImage {
@@ -12,6 +12,11 @@
   
   filter: brightness(80%) blur(7px);
   
+}
+
+.HeroBackgroundImage img {
+  height: 51vw;
+  object-fit: contain;
 }
 
 .ComputerDesign {
@@ -170,4 +175,87 @@
   text-align: left;
   margin-left: 175px;
   margin-right: 175px;
+}
+
+.ProjectsSection {
+  margin-top: 100px;
+  justify-items: left;
+  margin-left: 175px;
+  margin-right: 175px;
+}
+
+.ProjectsSection h2 {
+  font-size: 64px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  filter: drop-shadow(5px 20px 11px #00000050);
+}
+
+.ProjectsHeader {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.Project-Item {
+  width: auto;
+  padding: 60px;
+  box-shadow: inset 0px 0px 20px #5eff0045, 0px 0px 20px #5eff0005;
+  background-color: #ffffff05;
+  border-radius: 15px;
+  justify-items: left;
+  align-content: center;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.Project-Item a {
+  width: 50%;
+}
+
+.Project-Item img {
+  width: 100%;
+  margin-left: 15px;
+  border-radius: 15px;
+  filter: drop-shadow(-15px 15px 0px #2A933C);
+}
+
+.Project-Item p {
+    font-size: 24px;
+    font-family: Instrument Sans;
+    font-weight: 600;
+}
+
+.Project-Item h4 {
+    color: #87C440;
+    font-size: 42px;
+    font-family: Instrument Sans;
+    font-weight: 600;
+    filter: drop-shadow(5px 20px 11px #00000050);
+    margin: 0;
+}
+
+.Project-Content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.Project-Content p {
+
+  font-weight: 500;
+}
+
+.Project-Text {
+  display: block;
+  
+  width: 50%;
+}
+
+.Project-Text h5 {
+
+    font-size: 42px;
+    font-family: Instrument Sans;
+    font-weight: 600;
+    filter: drop-shadow(5px 20px 11px #00000050);
+    margin: 0;
 }
