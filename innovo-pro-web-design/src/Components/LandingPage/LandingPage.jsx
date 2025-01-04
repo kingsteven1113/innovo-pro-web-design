@@ -18,6 +18,63 @@ import HeaderBreadcrumb2 from '../../assets/HeaderBreadcrumb2.svg'
 import CJStonesThumbnail from '../../assets/CJ Stones Landing Page.png'
 import PremierDentalThumbnail from '../../assets/Premier Dental Landing Page.png'
 
+const OpenJFE = () => {
+  const JFE = document.getElementById("JFE");
+  const UXE = document.getElementById("UXE");
+  const SUXE = document.getElementById("SUXE");
+  if (JFE.classList.contains("JIclosed")) {
+    JFE.classList.replace("JIclosed", "JIopen");
+    UXE.classList.replace("JIopen","JIclosed");
+    SUXE.classList.replace("JIopen","JIclosed");
+    
+    
+    
+    
+  }
+  else {
+    JFE.classList.replace("JIopen","JIclosed");
+    
+    
+  }
+}
+
+const OpenUXE = () => {
+  const JFE = document.getElementById("JFE");
+  const UXE = document.getElementById("UXE");
+  const SUXE = document.getElementById("SUXE");
+  if (UXE.classList.contains("JIclosed")) {
+    UXE.classList.replace("JIclosed", "JIopen");
+    JFE.classList.replace("JIopen","JIclosed");
+    SUXE.classList.replace("JIopen","JIclosed");
+    
+    
+    
+  }
+  else {
+    UXE.classList.replace("JIopen","JIclosed");
+    
+    
+  }
+}
+
+const OpenSUXE = () => {
+  const JFE = document.getElementById("JFE");
+  const UXE = document.getElementById("UXE");
+  const SUXE = document.getElementById("SUXE");
+  if (SUXE.classList.contains("JIclosed")) {
+    SUXE.classList.replace("JIclosed", "JIopen");
+    JFE.classList.replace("JIopen","JIclosed");
+    UXE.classList.replace("JIopen","JIclosed");
+    
+    
+  }
+  else {
+    SUXE.classList.replace("JIopen","JIclosed");
+    
+  }
+}
+
+
 const LandingPage = () => {
   return (
     <>
@@ -159,6 +216,79 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <section id="Aspirations">
+      <div className="Aspirations">
+        <div id='accordion' className="AspirationsInformation ">
+          <div className="AspirationOne">
+            <div className="JobTitle">
+            <h4>Tranquilo Cafe</h4>
+            </div>
+            <div className='TimelineButtonContainer'>
+            <i class="material-icons" onClick={OpenJFE}>&#xe148;</i>
+            <div className="TimelineOne">
+              <h4 style={{margin: "0"}}>Right Now</h4>
+            </div>
+            </div>
+          </div>
+          <div id="JFE" class="JobInfo JIclosed">
+            <h5>Tranquilo Cafe</h5>
+            
+            <h6 style={{marginTop: "30px"}}>What I am looking for from this role:</h6>
+            <ul className='JobList'>
+              <li>Mentorship to build on my skills and coding process</li>
+              <li>Development of my skills in real world scenarios</li>
+              <li>Having an effect on the team and the product produced</li>
+              <li>To utilize my skillset effectively in the work I do</li>
+              <li>Learn new technologies in the industry</li>
+            </ul>
+          </div>
+          <div className="AspirationTwo panel panel-default">
+          <div className="JobTitle panel-heading">
+            <h4 className='panel-title'>CJ Stones</h4>
+            </div>
+            <div className='TimelineButtonContainer'>
+            <i onClick={OpenUXE} class="material-icons">&#xe148;</i>
+            <div className="TimelineOne">
+              <h4 style={{margin: "0"}}>In 1 - 3 Years</h4>
+            </div>
+            </div>
+          </div>
+          <div id="UXE" class="JobInfo JIclosed">
+            <h5>CJ Stones</h5>
+          
+            <h6 style={{marginTop: "30px"}}>What I am looking for from this role:</h6>
+            <ul className='JobList'>
+              <li>Mentor a intern/Jr Developer</li>
+              <li>Take on new tasks in the development process</li>
+              <li>Encourage a hardworking and effective work culture and make impactful decisions</li>
+              <li>To expand my skillset to meet the needs of new work requirements</li>
+              <li>To continue to learn new technologies in the industry</li>
+            </ul>
+            </div>
+          <div className="AspirationThree panel panel-default">
+          <div className="JobTitle panel-heading">
+            <h4 class="panel-title">Premier Dental</h4>
+            </div>
+            <div className='TimelineButtonContainer'>
+            <i onClick={OpenSUXE} class="material-icons">&#xe148;</i>
+            <div className="TimelineOne">
+              <h4 style={{margin: "0"}}>In 5 - 10 <br></br> Years</h4>
+            </div>
+            </div>
+            
+          </div>
+          <div id="SUXE" class="JobInfo JIclosed">
+            <h5>Premier Dental</h5>
+        
+            <h6 style={{marginTop: "30px"}}>What I am looking for from this role:</h6>
+            <ul className='JobList'>
+              <li>Mentor multiple engineers to improve effectiveness of the team</li>
+              <li>Make impactful decisions and be part of the end to end process of development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     </section>
     </>
   );
