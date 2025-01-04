@@ -16,6 +16,7 @@ import DottedLine from '../../assets/Dotted Line.svg'
 import TranquiloCafeThumbnail from '../../assets/Tranquilo Cafe Landing Page.png'
 import HeaderBreadcrumb2 from '../../assets/HeaderBreadcrumb2.svg'
 import CJStonesThumbnail from '../../assets/CJ Stones Landing Page.png'
+import PremierDentalThumbnail from '../../assets/Premier Dental Landing Page.png'
 
 const LandingPage = () => {
   return (
@@ -146,7 +147,7 @@ const LandingPage = () => {
         <p>Website Design and Development</p>
         <div className='Project-Content'>
           <a target='_blank' href="/">
-            <img src={TranquiloCafeThumbnail} alt="" />
+            <img src={PremierDentalThumbnail} alt="" />
           </a>
           <div className='Project-Text'>
             <h5>Our Part?</h5>
