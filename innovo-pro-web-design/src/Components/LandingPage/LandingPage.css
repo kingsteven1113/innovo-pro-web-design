@@ -198,6 +198,7 @@
 }
 
 .Project-Item {
+  display: none;
   width: auto;
   padding: 60px;
   box-shadow: inset 0px 0px 20px #5eff0045, 0px 0px 20px #5eff0005;
@@ -279,11 +280,12 @@
 
 .Aspirations {
   margin-top: 100px;
-  
   gap: 100px;
   display: flex;
   flex-direction: column;
-  
+  width: 100%;
+  padding: 25px;
+
 }
 
 .AspirationsTitle {
@@ -295,13 +297,14 @@
 .AspirationsInformation {
   display: flex;
   width: 100%;
+  height: auto;
   border-radius: 25px;
   overflow: hidden;
 }
 
 .AspirationOne {
     width: 33%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)),
     url('../../assets/Tranquilo Cafe Landing Page.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -363,7 +366,7 @@ text-align: center;
 
 .AspirationTwo {
   width: 34%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)),
     url('../../assets/CJ Stones Landing Page.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -397,7 +400,7 @@ text-align: center;
 
 .AspirationThree {
   width: 33%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)),
     url('../../assets/Premier Dental Landing Page.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -409,6 +412,7 @@ text-align: center;
   padding-top: 20px;
   height: 60vh;
   margin: 0;
+  overflow: hidden;
 }
 
 @keyframes open {
@@ -432,36 +436,57 @@ animation-duration: 1.25s;
 .JIopen{ 
 display: block;
 width: 80%;
-height: 60vh;
+height: auto;
 animation-name: open;
 animation-duration: 1.25s;
 animation-direction: normal;
 padding: 25px;
 }
 
-a {
-color: #fff;
-filter: drop-shadow(none);
-}
+
 
 .JobInfo {
-
-background-color: #e0e0e0;
 overflow: hidden;
+background-color: #e0e0e0;
+color: #000;
+font-family: Instrument Sans;
+text-align: left;
+}
 
+.JobInfo h5 {
+  font-size: 28px;
+
+}
+
+.JobInfo h6 {
+  font-size: 24px;
+  margin: 0;
+}
+.JobInfo p {
+  font-size: 16px;
 }
 
 .AspirationOne h4 {
   font-family: Instrument Sans;
   font-size: 30px;
 }
+.AspirationTwo h4 {
+  font-family: Instrument Sans;
+  font-size: 30px;
+}
+
+.AspirationThree h4 {
+  font-family: Instrument Sans;
+  font-size: 30px;
+}
+
 
 .AspirationOne h5 {
   font-family: Instrument Sans;
 }
 
 .JobList {
-font-family: 'Jost', sans-serif;
+font-family: Instrument Sans;
 margin-top: 15px;
 display: flex;
 flex-direction: column;
@@ -474,5 +499,51 @@ flex-direction: column;
 gap: 25px;
 }
 
+.SeeMore {
+  background-color: #fff;
+  color: #2D2D2D;
+  border-radius: 0px;
+  border-color: #2D2D2D;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  transition: 0.25s;
+}
+
+.SeeMore:hover {
+  background-color: #2A933C;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.Focused {
+  background-color: #2A933C;
+  color: #fff;
+}
+
+.CTA-Alt {
+  color: #fff ;
+  background-color: #0B4B25;
+  border-radius: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.25s;
+}
+
+.CTA-Alt:hover {
+  background-color: #2A933C;
+  color: #fff;
+  transition: 0.25s;
+}
 
 
+
+.Innovo-Pro-Story {
+  display: flex;
+}

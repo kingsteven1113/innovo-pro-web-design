@@ -17,15 +17,19 @@ import TranquiloCafeThumbnail from '../../assets/Tranquilo Cafe Landing Page.png
 import HeaderBreadcrumb2 from '../../assets/HeaderBreadcrumb2.svg'
 import CJStonesThumbnail from '../../assets/CJ Stones Landing Page.png'
 import PremierDentalThumbnail from '../../assets/Premier Dental Landing Page.png'
+import InnovoProStoryPhoto from '../../assets/InnovoProStoryPhoto.png'
+import InnovoProStoryBreadcrumb from '../../assets/InnovoProStoryBreadcrumb.svg'
 
 const OpenJFE = () => {
   const JFE = document.getElementById("JFE");
   const UXE = document.getElementById("UXE");
   const SUXE = document.getElementById("SUXE");
+  const Button = document.getElementById('A1');
   if (JFE.classList.contains("JIclosed")) {
     JFE.classList.replace("JIclosed", "JIopen");
     UXE.classList.replace("JIopen","JIclosed");
     SUXE.classList.replace("JIopen","JIclosed");
+    Button.classList.add("Focused")
     
     
     
@@ -33,7 +37,7 @@ const OpenJFE = () => {
   }
   else {
     JFE.classList.replace("JIopen","JIclosed");
-    
+    Button.classList.remove('Focused')
     
   }
 }
@@ -42,16 +46,19 @@ const OpenUXE = () => {
   const JFE = document.getElementById("JFE");
   const UXE = document.getElementById("UXE");
   const SUXE = document.getElementById("SUXE");
+  const Button = document.getElementById('A2');
   if (UXE.classList.contains("JIclosed")) {
     UXE.classList.replace("JIclosed", "JIopen");
     JFE.classList.replace("JIopen","JIclosed");
     SUXE.classList.replace("JIopen","JIclosed");
+    Button.classList.add("Focused")
     
     
     
   }
   else {
     UXE.classList.replace("JIopen","JIclosed");
+    Button.classList.remove("Focused")
     
     
   }
@@ -61,15 +68,18 @@ const OpenSUXE = () => {
   const JFE = document.getElementById("JFE");
   const UXE = document.getElementById("UXE");
   const SUXE = document.getElementById("SUXE");
+  const Button = document.getElementById('A3');
   if (SUXE.classList.contains("JIclosed")) {
     SUXE.classList.replace("JIclosed", "JIopen");
     JFE.classList.replace("JIopen","JIclosed");
     UXE.classList.replace("JIopen","JIclosed");
+    Button.classList.add("Focused")
     
     
   }
   else {
     SUXE.classList.replace("JIopen","JIclosed");
+    Button.classList.remove("Focused")
     
   }
 }
@@ -157,6 +167,7 @@ const LandingPage = () => {
         <h2>Projects</h2>
         <img src={HeaderBreadcrumb2} alt="" />
         </div>
+
       <div className='Project-Item'>
         <h4>Tranquilo Cafe</h4>
         <p>Website Design</p>
@@ -180,7 +191,7 @@ const LandingPage = () => {
 
       <div className='Project-Item'>
         <h4>CJ Stones</h4>
-        <p>Website Design, Develop and Maintenance</p>
+        <p>Website Design, Development and Maintenance</p>
         <div className='Project-Content'>
           <a target='_blank' href="http://www.cjstones.com/">
             <img src={CJStonesThumbnail} alt="" />
@@ -216,79 +227,91 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+
+
+
+
       <section id="Aspirations">
       <div className="Aspirations">
-        <div id='accordion' className="AspirationsInformation ">
+        <div id='accordion' className="AspirationsInformation">
           <div className="AspirationOne">
             <div className="JobTitle">
             <h4>Tranquilo Cafe</h4>
             </div>
             <div className='TimelineButtonContainer'>
-            <i class="material-icons" onClick={OpenJFE}>&#xe148;</i>
-            <div className="TimelineOne">
-              <h4 style={{margin: "0"}}>Right Now</h4>
-            </div>
+              <button id='A1' className='SeeMore' onClick={OpenJFE}>Learn More</button>
             </div>
           </div>
           <div id="JFE" class="JobInfo JIclosed">
             <h5>Tranquilo Cafe</h5>
-            
-            <h6 style={{marginTop: "30px"}}>What I am looking for from this role:</h6>
+            <h6 style={{marginTop: "30px"}}>Our Role?</h6>
             <ul className='JobList'>
-              <li>Mentorship to build on my skills and coding process</li>
-              <li>Development of my skills in real world scenarios</li>
-              <li>Having an effect on the team and the product produced</li>
-              <li>To utilize my skillset effectively in the work I do</li>
-              <li>Learn new technologies in the industry</li>
+              <li>Website Design</li>
             </ul>
+            <p>This was a website redesign we did for a budding coffee shop having that was adding its third shop! <br /> <br />
+            We designed the site, a new logo and helped create a new branding theme using new fonts and a revised color scheme.</p>
+            <br />
+            <a target='_blank' href="https://www.figma.com/proto/ZJs5T32jgPEwwEarpcp0sl/The-Playground?page-id=205%3A1037&node-id=205-1038&p=f&viewport=718%2C467%2C0.14&t=fhdpIm7h5f0wnzg9-1&scaling=min-zoom&content-scaling=fixed" className='CTA-Alt'>Check out the Website!</a>
           </div>
           <div className="AspirationTwo panel panel-default">
           <div className="JobTitle panel-heading">
             <h4 className='panel-title'>CJ Stones</h4>
             </div>
             <div className='TimelineButtonContainer'>
-            <i onClick={OpenUXE} class="material-icons">&#xe148;</i>
-            <div className="TimelineOne">
-              <h4 style={{margin: "0"}}>In 1 - 3 Years</h4>
-            </div>
+            <button id='A2' className='SeeMore' onClick={OpenUXE}>Learn More</button>
             </div>
           </div>
           <div id="UXE" class="JobInfo JIclosed">
             <h5>CJ Stones</h5>
           
-            <h6 style={{marginTop: "30px"}}>What I am looking for from this role:</h6>
+            <h6 style={{marginTop: "30px"}}>Our Role?</h6>
             <ul className='JobList'>
-              <li>Mentor a intern/Jr Developer</li>
-              <li>Take on new tasks in the development process</li>
-              <li>Encourage a hardworking and effective work culture and make impactful decisions</li>
-              <li>To expand my skillset to meet the needs of new work requirements</li>
-              <li>To continue to learn new technologies in the industry</li>
+              <li>Website and Brand Redesign</li>
+              <li>Website Development</li>
+              <li>Ongoing Site Maintenance</li>
             </ul>
+            <p>This was a website redesign we did for a growing small business in the New York Area. <br /> 
+              We designed the site, a new logo and helped create a new branding theme using new fonts and a revised color scheme.</p>
+              
+            <br />
+            <a target='_blank' href="http://www.cjstones.com/" className='CTA-Alt'>Check out the Website!</a>
             </div>
           <div className="AspirationThree panel panel-default">
           <div className="JobTitle panel-heading">
             <h4 class="panel-title">Premier Dental</h4>
             </div>
             <div className='TimelineButtonContainer'>
-            <i onClick={OpenSUXE} class="material-icons">&#xe148;</i>
-            <div className="TimelineOne">
-              <h4 style={{margin: "0"}}>In 5 - 10 <br></br> Years</h4>
-            </div>
+            <button id='A3' className='SeeMore' onClick={OpenSUXE}>Learn More</button>
             </div>
             
           </div>
           <div id="SUXE" class="JobInfo JIclosed">
             <h5>Premier Dental</h5>
-        
-            <h6 style={{marginTop: "30px"}}>What I am looking for from this role:</h6>
+            <h6>Our Role?</h6>
             <ul className='JobList'>
-              <li>Mentor multiple engineers to improve effectiveness of the team</li>
-              <li>Make impactful decisions and be part of the end to end process of development</li>
+              <li>Website Design</li>
+              <li>Website Development</li>
             </ul>
+            <p>This was a website design and development we did for a Local Dentist! <br /><br />
+
+                We designed the site and helped create a new branding theme using new fonts and a revised color scheme.</p>
+            <br />
+            <a target='_blank' href="/" className='CTA-Alt'>Check out the Website!</a>
           </div>
         </div>
       </div>
     </section>
+    </section>
+
+
+
+    <section className='Innovo-Pro-Story'>
+      <img src={InnovoProStoryPhoto} alt="" />
+      <div>
+        <img src={InnovoProStoryBreadcrumb} alt="" />
+        <h3>The Innovo Pro Story</h3>
+        <p>Innovo Pro Web Design was started by Steven King who is a young entrepreneur in the New York Area who looks to use his 7 years of professional design and development experience to support businesses in building their online presence and helping the world discover them. The goal is to provide every client with the personal touch that Innovo Pro brings to deliver a Innovative, Professional and Unique experience not only to our clients but to their customers as well.</p>
+      </div>
     </section>
     </>
   );

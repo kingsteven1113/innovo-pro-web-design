@@ -18,6 +18,13 @@
   font-size: 18px;
 }
 
+.CTA:hover {
+  background-color: #2A933C;
+  color: #fff;
+  transition: 0.25s;
+}
+
+
 
 .logo {
   height: 6em;
