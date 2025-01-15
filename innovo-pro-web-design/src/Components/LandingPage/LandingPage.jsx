@@ -306,11 +306,58 @@ const LandingPage = () => {
 
 
     <section className='Innovo-Pro-Story'>
-      <img src={InnovoProStoryPhoto} alt="" />
-      <div>
+      <img className='StoryPhoto' src={InnovoProStoryPhoto} alt="" />
+      <div className='StoryInfo'>
         <img src={InnovoProStoryBreadcrumb} alt="" />
         <h3>The Innovo Pro Story</h3>
-        <p>Innovo Pro Web Design was started by Steven King who is a young entrepreneur in the New York Area who looks to use his 7 years of professional design and development experience to support businesses in building their online presence and helping the world discover them. The goal is to provide every client with the personal touch that Innovo Pro brings to deliver a Innovative, Professional and Unique experience not only to our clients but to their customers as well.</p>
+        <p>Innovo Pro Web Design was started by Steven King who is a young entrepreneur in the New York Area who looks to use his 7 years of professional design and development experience to support businesses in building their online presence and helping the world discover them. <br /><br />The goal is to provide every client with the personal touch that Innovo Pro brings to deliver a Innovative, Professional and Unique experience not only to our clients but to their customers as well.</p>
+        <a className='CTA' href="/">Book A Call!</a>
+      </div>
+    </section>
+
+    <section className='PricingSection'>
+      <div className='PricingHeader'>
+      <div className='Pricing-Background-Box'></div>
+      <div className='Pricing-Background-Box'></div>
+      <div className='Pricing-Background-Box'></div>
+      <div className='Pricing-Background-Box'></div>
+      <div className='Pricing-Background-Box'></div>
+        <h3>Pricing</h3>
+        <img src={HeaderBreadcrumb1} alt="" />
+      </div>
+      <div>
+        <div className='Pricing-Item'>
+          <div className='Pricing-Item-Info'>
+            <h4>Lump Sum</h4>
+            <ul>
+              <li>Design & Development</li>
+              <li>$25/month Hosting</li>
+              <li>$50 fee Per Additional Page After 5</li>
+              <li>$50/month Unlimited Edits Add On</li>
+            </ul>
+          </div>
+          <div className='Pricing-Item-Price'>
+              <h5>$1000</h5>
+              <a className='CTA' href="/">Book A Call!</a>
+          </div>
+        </div>
+        <div className='Pricing-Item'>
+          <div className='Pricing-Item-Info'>
+            <h4>Monthly</h4>
+            <ul>
+              <li>Design & Development</li>
+              <li>Hosting Included</li>
+              <li>$50 fee Per Additional Page After 5</li>
+              <li>Unlimited Edits</li>
+              <li>Continued Support</li>
+              <li>Continued SEO Optimization</li>
+            </ul>
+          </div>
+          <div className='Pricing-Item-Price'>
+              <h5>$150/month</h5>
+              <a className='CTA' href="/">Book A Call!</a>
+          </div>
+        </div>
       </div>
     </section>
     </>

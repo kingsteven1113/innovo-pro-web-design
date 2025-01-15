@@ -546,4 +546,33 @@ gap: 25px;
 
 .Innovo-Pro-Story {
   display: flex;
+  margin-right: 175px;
+  margin-left: 175px;
+  margin-top: 100px;
+  gap: 90px;
+  align-items: center;
+}
+
+.StoryPhoto {
+  filter: drop-shadow(15px 15px 0px #2A933C);
+  border-radius: 25px;
+}
+
+.StoryInfo {
+  text-align: left;
+}
+
+.StoryInfo h3 {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-size: 64px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  filter: drop-shadow(5px 20px 11px #00000050);
+}
+.StoryInfo p {
+  font-size: 20px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  margin-bottom: 45px;
 }
