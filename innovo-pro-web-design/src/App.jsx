@@ -15,6 +15,7 @@ function App() {
     cursor.setAttribute("style", "transform: translate("+(e.clientX - 10)+'px, '+(e.clientY - 10)+'px);')
   })
 
+
   
 
   

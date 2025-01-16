@@ -72,17 +72,20 @@ const OpenSUXE = () => {
   const UXE = document.getElementById("UXE");
   const SUXE = document.getElementById("SUXE");
   const Button = document.getElementById('A3');
+  const A3P = document.getElementById('A3P');
   if (SUXE.classList.contains("JIclosed")) {
     SUXE.classList.replace("JIclosed", "JIopen");
     JFE.classList.replace("JIopen","JIclosed");
     UXE.classList.replace("JIopen","JIclosed");
     Button.classList.add("Focused")
+    A3P.classList.add('Border')
     
     
   }
   else {
     SUXE.classList.replace("JIopen","JIclosed");
-    Button.classList.remove("Focused")
+    Button.classList.remove("Focused");
+    A3P.classList.remove('Border');
     
   }
 }
@@ -91,7 +94,7 @@ const OpenSUXE = () => {
 const LandingPage = () => {
   return (
     <>
-    <section className='HeroSection'>
+    <section id='Hero' className='HeroSection'>
       <div className='HeroBackgroundImage'>
         <img src={BackgroundTube} alt="" />
       </div>
@@ -121,11 +124,11 @@ const LandingPage = () => {
         <h1 className='H1'>We Build Websites</h1>
       </div>
       <p className='HeroParagraph'>Helping the world discover you!</p>
-      <div className='HeroCTA'><a className='CTA' href="/contact">Book a Call!</a></div>
+      <div className='HeroCTA'><a className='CTA' href="mailto:innovoprodesign@gmail.com">Book a Call!</a></div>
       </div>
      
     </section>
-    <section>
+    <section id='Process'>
       <div>
         <div className='ProcessSectionHeader'>
           <h2 className='ProcessHeader'>Our Process</h2>
@@ -165,7 +168,7 @@ const LandingPage = () => {
         <p className='Process-Paragraph'>We have developed a smooth clean procces from an idea for a website to a fully built website that is ready for the world to experience. You will be a part of the entire process and this process leads to communitcating with us throughout each step so that the end product is something you're happy with and something we can be proud of.</p>
       </div>
     </section>
-    <section className='ProjectsSection'>
+    <section id='Projects' className='ProjectsSection'>
       <div className='ProjectsHeader'>
         <h2>Projects</h2>
         <img src={HeaderBreadcrumb2} alt="" />
@@ -284,7 +287,7 @@ const LandingPage = () => {
             <br />
             <a target='_blank' href="http://www.cjstones.com/" className='CTA-Alt'>Check out the Website!</a>
             </div>
-          <div className="AspirationThree panel panel-default">
+          <div id='A3P' className="AspirationThree panel panel-default">
           <div className="JobTitle panel-heading">
             <h4 class="panel-title">Premier Dental</h4>
             </div>
@@ -313,17 +316,17 @@ const LandingPage = () => {
 
 
 
-    <section className='Innovo-Pro-Story'>
+    <section id='About' className='Innovo-Pro-Story'>
       <img className='StoryPhoto' src={InnovoProStoryPhoto} alt="" />
       <div className='StoryInfo'>
         <img src={InnovoProStoryBreadcrumb} alt="" />
         <h3>The Innovo Pro Story</h3>
         <p>Innovo Pro Web Design was started by Steven King who is a young entrepreneur in the New York Area who looks to use his 7 years of professional design and development experience to support businesses in building their online presence and helping the world discover them. <br /><br />The goal is to provide every client with the personal touch that Innovo Pro brings to deliver a Innovative, Professional and Unique experience not only to our clients but to their customers as well.</p>
-        <a className='CTA' href="/">Book A Call!</a>
+        <a className='CTA' href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
       </div>
     </section>
 
-    <section className='PricingSection'>
+    <section id='Pricing' className='PricingSection'>
       <div className='PricingHeader'>
       <div className='Pricing-Background-Grid'>
         <div className='Pricing-Background-Box HeroSectionBox'></div>
@@ -348,7 +351,7 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>$1000</h5>
-              <a className='CTA Pricing-CTA' href="/">Book A Call!</a>
+              <a className='CTA Pricing-CTA' href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
           </div>
         </div>
         <div className='Pricing-Item'>
@@ -365,7 +368,7 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>$150/month</h5>
-              <a className='CTA Pricing-CTA' href="/">Book A Call!</a>
+              <a className='CTA Pricing-CTA' href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
           </div>
         </div>
       </div>
@@ -373,7 +376,7 @@ const LandingPage = () => {
     <section className='EndingSection'>
       <h3>Lets Work Together</h3>
       <img src={LargeBreadcrumb} alt="" />
-      <a className='CTA' href="/">Book a Call!</a>
+      <a className='CTA' href="mailto:innovoprodesign@gmail.com">Book a Call!</a>
     </section>
     </>
   );
