@@ -19,6 +19,9 @@ import CJStonesThumbnail from '../../assets/CJ Stones Landing Page.png'
 import PremierDentalThumbnail from '../../assets/Premier Dental Landing Page.png'
 import InnovoProStoryPhoto from '../../assets/InnovoProStoryPhoto.png'
 import InnovoProStoryBreadcrumb from '../../assets/InnovoProStoryBreadcrumb.svg'
+import LargeBreadcrumb from '../../assets/LargeBreadcrumb.svg'
+
+
 
 const OpenJFE = () => {
   const JFE = document.getElementById("JFE");
@@ -167,6 +170,11 @@ const LandingPage = () => {
         <h2>Projects</h2>
         <img src={HeaderBreadcrumb2} alt="" />
         </div>
+        <p>We pride ourselves on delivering innovative, professional, user-friendly web design solutions.  Whether you're looking for a fresh website redesign or a brand-new digital presence, we work closely with you at every step to ensure your site is visually appealing, functional, and optimized for performance. Browse our projects to see how we bring creativity and technical expertise to life!
+
+
+
+</p>
 
       <div className='Project-Item'>
         <h4>Tranquilo Cafe</h4>
@@ -317,15 +325,17 @@ const LandingPage = () => {
 
     <section className='PricingSection'>
       <div className='PricingHeader'>
-      <div className='Pricing-Background-Box'></div>
-      <div className='Pricing-Background-Box'></div>
-      <div className='Pricing-Background-Box'></div>
-      <div className='Pricing-Background-Box'></div>
-      <div className='Pricing-Background-Box'></div>
+      <div className='Pricing-Background-Grid'>
+        <div className='Pricing-Background-Box HeroSectionBox'></div>
+        <div className='Pricing-Background-Box HeroSectionBox'></div>
+        <div className='Pricing-Background-Box HeroSectionBox'></div>
+        <div className='Pricing-Background-Box HeroSectionBox'></div>
+        <div className='Pricing-Background-Box HeroSectionBox'></div>
+      </div>
         <h3>Pricing</h3>
         <img src={HeaderBreadcrumb1} alt="" />
       </div>
-      <div>
+      <div className='Pricing-Details'>
         <div className='Pricing-Item'>
           <div className='Pricing-Item-Info'>
             <h4>Lump Sum</h4>
@@ -338,7 +348,7 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>$1000</h5>
-              <a className='CTA' href="/">Book A Call!</a>
+              <a className='CTA Pricing-CTA' href="/">Book A Call!</a>
           </div>
         </div>
         <div className='Pricing-Item'>
@@ -355,10 +365,15 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>$150/month</h5>
-              <a className='CTA' href="/">Book A Call!</a>
+              <a className='CTA Pricing-CTA' href="/">Book A Call!</a>
           </div>
         </div>
       </div>
+    </section>
+    <section className='EndingSection'>
+      <h3>Lets Work Together</h3>
+      <img src={LargeBreadcrumb} alt="" />
+      <a className='CTA' href="/">Book a Call!</a>
     </section>
     </>
   );

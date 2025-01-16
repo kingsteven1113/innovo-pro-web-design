@@ -71,6 +71,9 @@
   justify-content: center;
   filter: drop-shadow(0px 0px 10px #d9ff0180);
 }
+.HeroCTA a {
+  font-size: 24px !important;
+}
 
 .HeroSectionGrid {
   position: absolute;
@@ -102,7 +105,7 @@
 
 .ProcessSectionHeader {
   display: flex;
-  margin-left: 175px;
+  margin-left: 169.5px;
   gap: 50px;
   align-items: center;
 }
@@ -173,15 +176,15 @@
   font-family: Instrument Sans;
   font-weight: 600;
   text-align: left;
-  margin-left: 175px;
-  margin-right: 175px;
+  margin-left: 169.5px;
+  margin-right: 169.5px;
 }
 
 .ProjectsSection {
   margin-top: 100px;
   justify-items: left;
-  margin-left: 175px;
-  margin-right: 175px;
+  margin-left: 169.5px;
+  margin-right: 169.5px;
 }
 
 .ProjectsSection h2 {
@@ -189,6 +192,13 @@
   font-family: Instrument Sans;
   font-weight: 600;
   filter: drop-shadow(5px 20px 11px #00000050);
+}
+.ProjectsSection p {
+  font-family: Instrument Sans;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 75px;
+  text-align: left;
 }
 
 .ProjectsHeader {
@@ -279,18 +289,11 @@
 
 
 .Aspirations {
-  margin-top: 100px;
   gap: 100px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 25px;
-
-}
-
-.AspirationsTitle {
-  display: flex;
-  align-items: center;
+  
   
 }
 
@@ -298,8 +301,9 @@
   display: flex;
   width: 100%;
   height: auto;
-  border-radius: 25px;
   overflow: hidden;
+  filter: drop-shadow(15px 15px 0px #87C440);
+  border-radius: 25px;
 }
 
 .AspirationOne {
@@ -315,6 +319,9 @@
     padding-top: 20px;
     text-align: right;
     height: 60vh;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-radius: 25px 0px 0px 0px;
 }
 
 
@@ -377,6 +384,8 @@ text-align: center;
   justify-content: space-between;
   padding-top: 20px;
   height: 60vh;
+  border-top: 2px solid #fff;
+  
 }
 
 .AspirationTwo i {
@@ -413,6 +422,9 @@ text-align: center;
   height: 60vh;
   margin: 0;
   overflow: hidden;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 0px 25px 0px 0px;
 }
 
 @keyframes open {
@@ -546,9 +558,9 @@ gap: 25px;
 
 .Innovo-Pro-Story {
   display: flex;
-  margin-right: 175px;
-  margin-left: 175px;
-  margin-top: 100px;
+  margin-right: 169.5px;
+  margin-left: 169.5px;
+  margin-top: 200px;
   gap: 90px;
   align-items: center;
 }
@@ -576,3 +588,113 @@ gap: 25px;
   font-weight: 600;
   margin-bottom: 45px;
 }
+
+.PricingSection {
+  margin-right: 169.5px;
+  margin-left: 169.5px;
+  margin-top: 150px;
+}
+
+.Pricing-Background-Grid {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  gap: 15px;
+  z-index: 1;
+}
+
+.Pricing-Background-Box {
+  height: 300px;
+  box-shadow: inset 0px 0px 20px #ffffff02, 0px 0px 20px #ffffff02;
+  background-color: #ffffff02;
+  border-radius: 15px;
+}
+
+.PricingHeader {
+  display: flex;
+  align-items: center;
+}
+
+.PricingHeader h3 {
+  margin-left: 25px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-size: 64px;
+  font-family: Instrument Sans;
+  font-weight: 550;
+  filter: drop-shadow(5px 20px 11px #00000050);
+}
+
+.Pricing-Details {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+  
+}
+
+.Pricing-Item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-shadow: inset 0px 0px 20px #ffffff05,  0px 0px 10px #87C44050 ;
+  background-color: #ffffff05;
+  border-radius: 15px;
+  width: 50%;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.Pricing-Item h4 {
+  margin-top: 0px;
+  margin-bottom: 55px;
+  font-size: 48px;
+  font-family: Instrument Sans;
+  font-weight: 550;
+  color: #87C440;
+}
+.Pricing-Item li {
+  font-family: Instrument Sans;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 3;
+}
+
+.Pricing-Item-Price h5 {
+  color: #87C440;
+  font-family:  Instrument Sans;
+  font-size: 64px;
+  font-weight: 550;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.Pricing-CTA {
+  font-size: 24px !important; 
+}
+
+.EndingSection {
+  display: flex;
+  flex-direction: column;
+  margin-left: 169.5px;
+  margin-right: 169.5px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.EndingSection h3 {
+  color: white;
+  font-size: 96px;
+  font-weight: 550;
+  font-family: Instrument Sans;
+}
+.EndingSection img {
+  width: 80%;
+  padding-bottom: 50px;
+}
+.EndingSection a {
+  width: fit-content;
+  font-size: 30px;
+}
+
