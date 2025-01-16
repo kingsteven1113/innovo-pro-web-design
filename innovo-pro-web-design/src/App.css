@@ -74,3 +74,8 @@
   transition: 100ms;
 }
 
+.cursor::after{
+  content: '';
+  width: 200px;
+}
+
