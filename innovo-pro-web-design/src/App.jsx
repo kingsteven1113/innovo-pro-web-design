@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
     <div id='cursor' className='cursor'></div>
       <NavBar></NavBar>
     <Routes>
