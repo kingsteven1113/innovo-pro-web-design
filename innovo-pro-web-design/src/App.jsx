@@ -10,6 +10,7 @@ import './App.css'
 function App() {
 
   
+
   const cursor = document.getElementById('cursor');
     document.addEventListener('mousemove', e => {
     cursor.setAttribute("style", "transform: translate("+(e.clientX - 10)+'px, '+(e.clientY - 10)+'px);')
@@ -22,11 +23,11 @@ function App() {
 
   return (
     <>
-    <BrowserRouter basename='/'>
+    <BrowserRouter>
     <div id='cursor' className='cursor'></div>
       <NavBar></NavBar>
     <Routes>
-      <Route path='/' element={<LandingPage />}></Route>
+      <Route path='/innovo-pro-web-design' element={<LandingPage />}></Route>
     </Routes>
     <Footer></Footer>
     </BrowserRouter>
