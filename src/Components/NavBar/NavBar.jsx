@@ -7,10 +7,9 @@ const NavBar = () => {
 
   const OpenMenu = () => {
     const ToggleMenu = document.getElementById("MobileNav");
-    const OpenNav = document.getElementById("NavBar")
     if (ToggleMenu.classList.contains("closed")) {
       ToggleMenu.classList.remove("closed");
-      ToggleMenu.classList.add("open");
+      
       
       
       
@@ -18,7 +17,6 @@ const NavBar = () => {
     else {
       ToggleMenu.classList.add("closed");
       ToggleMenu.classList.remove("open");
-      OpenNav.style.borderRadius = "50px";
     }
   }
 
@@ -75,6 +73,13 @@ const NavBar = () => {
           <div className="MobileNav">
           <a className="Logo" onClick={HeroScroll}><img src={CompanyLogo} alt="Company Logo which is a geometric logo showing the letters I and P with a gradient of various shades of green." /></a>
           <IoIosMenu onClick={OpenMenu} className="Burger" />
+          </div>
+          <div id="MobileNav" className="Mobile-Nav-List closed">
+            <a className="Mobile-Nav-Item" onClick={ProcessScroll}>Our Process</a> 
+            <a className="Mobile-Nav-Item" onClick={ProjectsScroll}>Projects</a>
+            <a className="Mobile-Nav-Item" onClick={AboutScroll}>About</a>
+            <a className="Mobile-Nav-Item" onClick={PricingScroll}>Pricing</a>
+            <a className="Mobile-Nav-Item CTA" href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
           </div>
         </div>
         </>

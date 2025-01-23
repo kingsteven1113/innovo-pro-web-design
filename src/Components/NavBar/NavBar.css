@@ -5,7 +5,7 @@
     padding-top: 30px;
     padding-left: 55px;
     padding-right: 55px;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
     gap: 150px;
 }
 
@@ -46,29 +46,30 @@
     cursor: pointer;
 }
 
-.NavBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 50px;
-    
-}
 .MobileNav {
-    display: flex;
-    width: 100vw;
-    justify-content: space-between;
-    margin-left: 15%;
-    margin-right: 15%;
+    display: none;
 }
 
-.Burger {
-    font-size: 50px;
-    fill: #fff;
-    cursor: pointer;
+
+
+  .Nav-Column {
+    display: flex;
+    flex-direction: column;
   }
+  .Mobile-Nav-List {
+    display: none;
+  }
+
+  .open {
+    display: block !important;
+  }   
+
+  .closed {
+    display: none !important;
+  }
+
+
+  
 
 
 
@@ -85,52 +86,87 @@
     display: flex;
     gap: 120px;
 }
-
-
-}
-.MobileNav {
+.Nav-Column {
     display: none;
 }
+
+
+}
+
 
 @media only screen and (max-width: 1375px) {
 
-.CenterNav {
-    display: flex;
-    gap: 70px;
-}
-.NavBar {
-    gap: 150px;
-}
-.MobileNav {
-    display: none;
-}
-}
-
-@media only screen and (max-width: 1125px) {
-
     .CenterNav {
         display: flex;
+        gap: 50px;
+    }
+.NavBar {
         gap: 70px;
     }
-    .NavBar {
-        gap: 100px;
-    }
-    .MobileNav {
+    .Nav-Column {
         display: none;
     }
+
     }
 
-    @media only screen and (max-width: 1025px) {
 
-    .CenterNav {
-            display: flex;
-            gap: 50px;
-        }
+
+  @media only screen and (max-width: 915px) {
     .NavBar {
-            gap: 70px;
-        }
+        display: none;
+    }
+    .CenteringNav {
+        flex-direction: column;
+        width: 100%;
+    }
     .MobileNav {
-            display: none;
-        }
-        }
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 55px;
+        
+      }
+      .Mobile-Nav-List {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+        padding-bottom: 150px;
+      }
+      .Mobile-Nav-Item {
+        color: white;
+        padding: 15px;
+        border-radius: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+        background-color: #2A933C;
+      }
+      .Mobile-Nav-Item:active {
+        background-color: white;
+        color: #2A933C;
+        border-color: #87C440;
+        border-width: 2px;
+        border-style: solid;
+      }
+      .Mobile-Nav-Item:hover {
+        background-color: white;
+        color: #2A933C;
+        border-color: #87C440;
+        border-width: 2px;
+        border-style: solid;
+        transition: 0.5s;
+      }
+
+      
+
+      .Burger {
+        font-size: 50px;
+        fill: #fff;
+        cursor: pointer;
+      }
+  }
+ 
+
+    
     

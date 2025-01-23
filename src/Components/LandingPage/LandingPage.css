@@ -62,12 +62,14 @@
   font-weight: 600;
   margin-top: 140px;
   filter: drop-shadow(5px 7px 11px #00000050);
+  color: white;
 }
 .H1 {
   margin: 0;
   font-size: 96px;
   font-family: Instrument Sans;
   filter: drop-shadow(12px 15px 11px #00000050);
+  color: white;
 }
 
 .HeroParagraph {
@@ -76,6 +78,7 @@
   font-family: Instrument Sans;
   font-weight: 600;
   filter: drop-shadow(5px 20px 11px #00000050);
+  color: white;
 } 
 
 .HeroCTA {
@@ -141,6 +144,7 @@
   font-family: Instrument Sans;
   font-weight: 600;
   filter: drop-shadow(5px 20px 11px #00000050);
+  color: white;
 }
 
 .Process-Item {
@@ -204,6 +208,7 @@
   text-align: left;
   margin-left: 169.5px;
   margin-right: 169.5px;
+  color: white;
 }
 
 .ProjectsSection {
@@ -225,6 +230,7 @@
   font-weight: 600;
   margin-bottom: 75px;
   text-align: left;
+  color: white;
 }
 
 .ProjectsHeader {
@@ -607,12 +613,14 @@ gap: 25px;
   font-family: Instrument Sans;
   font-weight: 600;
   filter: drop-shadow(5px 20px 11px #00000050);
+  color: white;
 }
 .StoryInfo p {
   font-size: 20px;
   font-family: Instrument Sans;
   font-weight: 600;
   margin-bottom: 45px;
+  color: white;
 }
 
 .PricingSection {
@@ -651,6 +659,7 @@ gap: 25px;
   font-family: Instrument Sans;
   font-weight: 550;
   filter: drop-shadow(5px 20px 11px #00000050);
+  color: white;
 }
 
 .Pricing-Details {
@@ -685,6 +694,7 @@ gap: 25px;
   font-weight: 500;
   font-size: 20px;
   line-height: 3;
+  color: white;
 }
 
 .Pricing-Item-Price h5 {
@@ -714,6 +724,7 @@ gap: 25px;
   font-size: 96px;
   font-weight: 550;
   font-family: Instrument Sans;
+  color: white;
 }
 .EndingSection img {
   width: 80%;
