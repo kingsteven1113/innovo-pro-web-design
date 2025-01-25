@@ -741,3 +741,102 @@ gap: 25px;
 .Border {
   border-radius: 0px !important;
 }
+
+
+
+@media only screen and (min-width: 1375px) {
+
+  }
+  
+  
+@media only screen and (max-width: 1375px) {
+  
+      }
+  
+  
+  
+@media only screen and (max-width: 915px) {
+
+  .CompanyName {
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .HeroBackgroundImage {
+    display: none;
+  }
+  
+  .BackgroundLogos {
+    display: none;
+  }
+
+  .H1 {
+    font-size: 64px;
+  }
+  .ComputerDesign {
+    display: flex;
+    align-items: center;
+  }
+
+  .ComputerDesign img {
+    transform: scale(0.8);
+  }
+  .HeroSectionGrid {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .HeroSection {
+    width: auto;
+    justify-content: center;
+  }
+  .HeroSectionBox {
+    aspect-ratio: 1/1;
+    width: 90%;
+    box-shadow: inset 0px 0px 20px #87C44010, 0px 0px 20px #2A933C10;
+  background-color: #2A933C05;
+  }
+  .ProcessSectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 75px;
+
+  }
+  .ProcessHeader {
+    font-size: 42px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+  }
+
+  .ProcessSectionHeader img {
+    width: 60%;
+  }
+  .Process-Item {
+    justify-content: center;
+    align-items: center;
+  }
+  .MultiLogo4 {
+    justify-self: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .DottedLine {display: none;}
+  .Process-Paragraph {
+    margin: 0;
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 20px;
+  }
+
+     
+    }
+   
+  
+      
+      
+  
