@@ -60,14 +60,163 @@
     display: none;
   }
 
-  .open {
-    display: block !important;
-  }   
-
-  .closed {
-    display: none !important;
+  .Mobile-Animation-1 {
+    filter: opacity(0%);
+    animation-name: Child-Animation;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 
+  
+  @keyframes Child-Animation {
+    from {
+        transform: translateX(400px);
+        filter: opacity(0%);
+    }
+    to {
+      transform: translateX(0px);
+      filter: opacity(100%);
+    }
+  
+  }
+  @keyframes Child-Animation2 {
+    from {
+        transform: translateX(0px);
+        filter: opacity(100%);
+    }
+    to {
+      transform: translateX(400px);
+      filter: opacity(0%);
+    }
+  
+  } 
+
+
+
+  
+
+  .Mobile-Animation-2 {
+    transform: translateX(400px);
+    filter: opacity(0%);
+    animation-name: Child-Animation;
+    animation-duration: 0.75s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .Mobile-Animation-3 {
+    transform: translateX(400px);
+    filter: opacity(0%);
+    animation-name: Child-Animation;
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .Mobile-Animation-4 {
+    transform: translateX(400px);
+    filter: opacity(0%);
+    animation-name: Child-Animation;
+    animation-duration: 0.75s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .Mobile-Animation-5 {
+    transform: translateX(400px);
+    filter: opacity(0%);
+    animation-name: Child-Animation;
+    animation-duration: 0.75s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .Mobile-Animation-1-Reverse {
+    transform: translateX(0px);
+    animation-name: Child-Animation2;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .Mobile-Animation-2-Reverse {
+    transform: translateX(0px);
+    animation-name: Child-Animation2;
+    animation-duration: 0.75s;
+    animation-delay: 0.25s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  .Mobile-Animation-3-Reverse {
+    transform: translateX(0px);
+    animation-name: Child-Animation2;
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .Mobile-Animation-4-Reverse {
+    transform: translateX(0px);
+    animation-name: Child-Animation2;
+    animation-duration: 0.75s;
+    animation-delay: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .Mobile-Animation-5-Reverse {
+    transform: translateX(0px);
+    animation-name: Child-Animation2;
+    animation-duration: 0.75s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  
+ 
+
+  .closed {
+    filter: opacity(100%);
+    animation-name: Close-Menu;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+@keyframes Close-Menu  {
+  from {
+    filter: opacity(100%);
+    display: block;
+  }
+  to {
+    filter: opacity(0%);
+    display: none;
+  }
+}
 
   
 
@@ -129,6 +278,7 @@
       }
       .Mobile-Nav-List {
         display: flex;
+        height: 100%;
         flex-direction: column;
         gap: 15px;
         margin-top: 25px;
@@ -156,6 +306,7 @@
         border-width: 2px;
         border-style: solid;
         transition: 0.5s;
+        cursor: pointer;
       }
 
       

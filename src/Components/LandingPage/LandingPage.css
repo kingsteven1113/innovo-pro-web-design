@@ -86,7 +86,7 @@
   filter: drop-shadow(0px 0px 10px #d9ff0180);
   animation: HeroCTA-Animation 2s;
   animation-iteration-count: 1;
-  animation-delay: 10s;
+  animation-delay: 7.5s;
 }
 @keyframes HeroCTA-Animation {
   0% {

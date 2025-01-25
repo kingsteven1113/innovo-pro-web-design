@@ -7,16 +7,46 @@ const NavBar = () => {
 
   const OpenMenu = () => {
     const ToggleMenu = document.getElementById("MobileNav");
+    const FirstChild = document.getElementById('Mobile-Child1');
+    const SecondChild = document.getElementById('Mobile-Child2');
+    const ThirdChild = document.getElementById('Mobile-Child3');
+    const FourthChild = document.getElementById('Mobile-Child4');
+    const FifthChild = document.getElementById('Mobile-Child5');
+
     if (ToggleMenu.classList.contains("closed")) {
       ToggleMenu.classList.remove("closed");
-      
-      
-      
+
+      FirstChild.classList.add('Mobile-Animation-1');
+      SecondChild.classList.add('Mobile-Animation-2');
+      ThirdChild.classList.add('Mobile-Animation-3');
+      FourthChild.classList.add('Mobile-Animation-4');
+      FifthChild.classList.add('Mobile-Animation-5');
+
+      FirstChild.classList.remove('Mobile-Animation-1-Reverse');
+      SecondChild.classList.remove('Mobile-Animation-2-Reverse');
+      ThirdChild.classList.remove('Mobile-Animation-3-Reverse');
+      FourthChild.classList.remove('Mobile-Animation-4-Reverse');
+      FifthChild.classList.remove('Mobile-Animation-5-Reverse');
       
     }
     else {
-      ToggleMenu.classList.add("closed");
-      ToggleMenu.classList.remove("open");
+      
+      
+      
+
+      FirstChild.classList.remove('Mobile-Animation-1');
+      SecondChild.classList.remove('Mobile-Animation-2');
+      ThirdChild.classList.remove('Mobile-Animation-3');
+      FourthChild.classList.remove('Mobile-Animation-4');
+      FifthChild.classList.remove('Mobile-Animation-5');
+
+      FirstChild.classList.add('Mobile-Animation-1-Reverse');
+      SecondChild.classList.add('Mobile-Animation-2-Reverse');
+      ThirdChild.classList.add('Mobile-Animation-3-Reverse');
+      FourthChild.classList.add('Mobile-Animation-4-Reverse');
+      FifthChild.classList.add('Mobile-Animation-5-Reverse');
+
+      setTimeout(() => {ToggleMenu.classList.add("closed");}, 1750);
     }
   }
 
@@ -75,11 +105,11 @@ const NavBar = () => {
           <IoIosMenu onClick={OpenMenu} className="Burger" />
           </div>
           <div id="MobileNav" className="Mobile-Nav-List closed">
-            <a className="Mobile-Nav-Item" onClick={ProcessScroll}>Our Process</a> 
-            <a className="Mobile-Nav-Item" onClick={ProjectsScroll}>Projects</a>
-            <a className="Mobile-Nav-Item" onClick={AboutScroll}>About</a>
-            <a className="Mobile-Nav-Item" onClick={PricingScroll}>Pricing</a>
-            <a className="Mobile-Nav-Item CTA" href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
+            <a id="Mobile-Child1" className="Mobile-Nav-Item" onClick={ProcessScroll}>Our Process</a> 
+            <a id="Mobile-Child2" className="Mobile-Nav-Item" onClick={ProjectsScroll}>Projects</a>
+            <a id="Mobile-Child3" className="Mobile-Nav-Item" onClick={AboutScroll}>About</a>
+            <a id="Mobile-Child4" className="Mobile-Nav-Item" onClick={PricingScroll}>Pricing</a>
+            <a id="Mobile-Child5" className="Mobile-Nav-Item CTA" href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
           </div>
         </div>
         </>
