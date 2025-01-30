@@ -236,6 +236,7 @@
 .ProjectsHeader {
   display: flex;
   align-items: center;
+  color: white;
   gap: 50px;
 }
 
@@ -258,9 +259,9 @@
 
 .Project-Item img {
   width: 100%;
-  margin-left: 15px;
+
   border-radius: 15px;
-  filter: drop-shadow(-15px 15px 0px #2A933C);
+  filter: drop-shadow(-5px 5px 0px #2A933C);
 }
 
 .Project-Item p {
@@ -445,7 +446,7 @@ text-align: center;
 .AspirationThree {
   width: 33%;
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.5)),
-    url('../../assets/Premier Dental Landing Page.png');
+    url('../../assets/StayHealthy.webp');
   background-size: cover;
   background-repeat: no-repeat;
   letter-spacing: 2px;
@@ -511,6 +512,7 @@ text-align: left;
 }
 .JobInfo p {
   font-size: 16px;
+  color: #000;
 }
 
 .AspirationOne h4 {
@@ -783,9 +785,9 @@ gap: 25px;
   }
   .HeroSectionGrid {
     flex-direction: column;
+    justify-content: center;
+    width: 100%;
     align-items: center;
-    margin-right: 10px;
-    margin-left: 10px;
     flex-wrap: nowrap;
     padding: 0;
   }
@@ -861,6 +863,8 @@ gap: 25px;
   .Project-Item {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    padding-bottom: 50px;
     
   }
   .Project-Content {
@@ -877,7 +881,8 @@ gap: 25px;
   }
 
   .Project-Text a {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 15px;
   }
 
   .Innovo-Pro-Story {
@@ -927,7 +932,7 @@ gap: 25px;
   }
 
   .Pricing-Item h5 {
-    font-size: 56px;
+    font-size: 48px;
   }
   .PricingHeader h3 {
     margin-left: 0;
@@ -954,6 +959,10 @@ gap: 25px;
   
   .Pricing-Item-Info {
     width: 100%;
+  }
+
+  .HeroSectionBox:nth-child(n+4) {
+    display: none;
   }
      
     }

@@ -20,6 +20,7 @@ import PremierDentalThumbnail from '../../assets/Premier Dental Landing Page.web
 import InnovoProStoryPhoto from '../../assets/InnovoProStoryPhoto.webp'
 import InnovoProStoryBreadcrumb from '../../assets/InnovoProStoryBreadcrumb.svg'
 import LargeBreadcrumb from '../../assets/LargeBreadcrumb.svg'
+import StayHealthy from '../../assets/StayHealthy.webp'
 
 
 
@@ -189,8 +190,7 @@ const LandingPage = () => {
           <div className='Project-Text'>
             <h5>Our Part?</h5>
             <p>This was a website redesign we did for a budding coffee shop having that was adding its third shop! <br /> <br />
-                We designed the site, a new logo and helped create a new branding theme using new fonts and a revised color scheme. <br /> <br />
-                Very happy to work with this client.</p>
+                We designed the site, a new logo and helped create a new branding theme using new fonts and a revised color scheme.</p>
             
             <br /><a target='_blank' href="https://www.figma.com/proto/ZJs5T32jgPEwwEarpcp0sl/The-Playground?page-id=205%3A1037&node-id=205-1038&p=f&viewport=718%2C467%2C0.14&t=fhdpIm7h5f0wnzg9-1&scaling=min-zoom&content-scaling=fixed" className='CTA'>Check out the Design!</a>
           </div>
@@ -210,8 +210,7 @@ const LandingPage = () => {
           <div className='Project-Text'>
             <h5>Our Part?</h5>
             <p>This was a website redesign we did for a growing small business in the New York Area. <br />
-                We designed the site, a new logo and helped create a new branding theme using new fonts and a revised color scheme. <br /> <br />
-                Very happy to work with this client.</p>
+                We designed the site, a new logo and helped create a new branding theme using new fonts and a revised color scheme.</p>
             
             <br /><a target='_blank' href="http://www.cjstones.com/" className='CTA'>Check out the Website!</a>
           </div>
@@ -222,17 +221,16 @@ const LandingPage = () => {
 
 
       <div className='Project-Item'>
-        <h4>Premier Dental</h4>
+        <h4>StayHealthy+</h4>
         <p>Website Design and Development</p>
         <div className='Project-Content'>
           <a target='_blank' href="/">
-            <img src={PremierDentalThumbnail} alt="" />
+            <img src={StayHealthy} alt="" />
           </a>
           <div className='Project-Text'>
             <h5>Our Part?</h5>
-            <p>This was a website design and development we did for a Local Dentist! <br /> <br />
-                We designed the site and helped create a new branding theme using new fonts and a revised color scheme. <br /> <br />
-                Very happy to work with this client.</p>
+            <p>This was a website design and development we did for a Health Insurance Company! <br /> <br />
+                We designed the site and helped create a new branding theme using new fonts and a revised color scheme.</p>
             
             <br /><a target='_blank' href="/" className='CTA'>Check out the Website!</a>
           </div>
@@ -289,7 +287,7 @@ const LandingPage = () => {
             </div>
           <div id='A3P' className="AspirationThree panel panel-default">
           <div className="JobTitle panel-heading">
-            <h4 class="panel-title">Premier Dental</h4>
+            <h4 class="panel-title">StayHealthy+</h4>
             </div>
             <div className='TimelineButtonContainer'>
             <button id='A3' className='SeeMore' onClick={OpenSUXE}>Learn More</button>
@@ -297,17 +295,17 @@ const LandingPage = () => {
             
           </div>
           <div id="SUXE" class="JobInfo JIclosed">
-            <h5>Premier Dental</h5>
+            <h5>StayHealthy+</h5>
             <h6>Our Role?</h6>
             <ul className='JobList'>
               <li>Website Design</li>
               <li>Website Development</li>
             </ul>
-            <p>This was a website design and development we did for a Local Dentist! <br /><br />
+            <p>This was a website design and development we did for a Insurance Company!<br /><br />
 
                 We designed the site and helped create a new branding theme using new fonts and a revised color scheme.</p>
             <br />
-            <a target='_blank' href="/" className='CTA-Alt'>Check out the Website!</a>
+            <a target='_blank' href="https://kingsteven1113.github.io/fecapstoneproject/" className='CTA-Alt'>Check out the Website!</a>
           </div>
         </div>
       </div>
