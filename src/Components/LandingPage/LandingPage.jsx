@@ -371,7 +371,7 @@ const LandingPage = () => {
         </div>
       </div>
     </section>
-    <section className='EndingSection'>
+    <section className='EndingSection'id='Contact'>
       <h3>Lets Work Together</h3>
       <form className='ContactForm' method='POST' onSubmit="submit" name='Contact' netlify>
         <input type='hidden' name='form-name' value='Contact' />
@@ -382,7 +382,10 @@ const LandingPage = () => {
         <p>Phone Number</p>
         <input type='tel' name='Phone' placeholder='Enter Your Phone Number...'required />
         <p>How did you Find Us?</p>
-        <input type='text' name='How-Did-You-Find-Us?' placeholder='Type Here...'required />
+        <select type='dropdown' name='How-Did-You-Find-Us?' required>
+        <option value="LinkedIn">LinkedIn</option>
+        <option value="Google">Google</option>
+        <option value="Business Card">Business Card</option></select>
         <p>Brief Description of the Project</p>
         <textarea name='Message' placeholder='Describe what your project consists of...'></textarea>
         <button type='submit' className='CTA'>Submit</button>

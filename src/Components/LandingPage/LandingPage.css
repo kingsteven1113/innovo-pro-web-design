@@ -753,6 +753,17 @@ gap: 25px;
   
 }
 
+.ContactForm select {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #2A933C;
+  background-color: white;
+  color: #0B4B25;
+  font-weight: 700;
+  font-family: Instrument Sans;
+  
+}
+
 
 .ContactForm textarea {
   padding: 15px;

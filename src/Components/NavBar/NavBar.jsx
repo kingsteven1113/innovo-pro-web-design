@@ -83,6 +83,12 @@ const NavBar = () => {
         
         
       }
+      function FormScroll() {
+        const AboutMe = document.getElementById("Contact");
+        AboutMe.scrollIntoView(true);
+        
+        
+      }
 
     return (
         <>
@@ -95,7 +101,7 @@ const NavBar = () => {
                     <a className="NavItem" onClick={AboutScroll}>About</a>
                     <a className="NavItem" onClick={PricingScroll}>Pricing</a>
                 </div>
-                <a className="CTA" href="mailto:innovoprodesign@gmail.com">Book a Call!</a>
+                <a className="CTA" onClick={FormScroll}>Book a Call!</a>
             </div>
         </div>
 
@@ -109,7 +115,7 @@ const NavBar = () => {
             <a id="Mobile-Child2" className="Mobile-Nav-Item" onClick={ProjectsScroll}>Projects</a>
             <a id="Mobile-Child3" className="Mobile-Nav-Item" onClick={AboutScroll}>About</a>
             <a id="Mobile-Child4" className="Mobile-Nav-Item" onClick={PricingScroll}>Pricing</a>
-            <a id="Mobile-Child5" className="Mobile-Nav-Item CTA" href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
+            <a id="Mobile-Child5" className="Mobile-Nav-Item CTA" onClick={FormScroll}>Book A Call!</a>
           </div>
         </div>
         </>
