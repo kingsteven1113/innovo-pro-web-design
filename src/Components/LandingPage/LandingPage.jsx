@@ -373,7 +373,7 @@ const LandingPage = () => {
     </section>
     <section className='EndingSection'>
       <h3>Lets Work Together</h3>
-      <form className='ContactForm' name='Contact-Form' netlify>
+      <form className='ContactForm' method='POST' name='Contact-Form' netlify>
         <p>Name</p>
         <input type='text' name='Name' placeholder='Enter Your Name...' required />
         <p>Email</p>
@@ -381,7 +381,7 @@ const LandingPage = () => {
         <p>Phone Number</p>
         <input type='tel' name='Phone' placeholder='Enter Your Phone Number...'required />
         <p>How did you Find Us?</p>
-        <input type='text' name='Phone' placeholder='Enter Your Phone Number...'required />
+        <input type='text' name='Phone' placeholder='Type Here...'required />
         <p>Brief Description of the Project</p>
         <textarea name='Message' placeholder='Describe what your project consists of...'></textarea>
         <button type='submit' className='CTA'>Submit</button>
