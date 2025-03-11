@@ -107,17 +107,17 @@ const LandingPage = () => {
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={HTMLLogo} alt="" /></div>
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={HTMLLogo} alt="" /></div><br />
         <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={AdobeLogo} alt="" /></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={JSLogo} alt="" /></div>
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={JSLogo} alt="" /></div><br />
         <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={ReactLogo} alt="" /></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={CSSLogo} alt="" /></div>
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={CSSLogo} alt="" /></div><br />
       </div>
       <div className='HeroTopLayer'>
       <div className='HeroHeaders'>
@@ -373,8 +373,20 @@ const LandingPage = () => {
     </section>
     <section className='EndingSection'>
       <h3>Lets Work Together</h3>
+      <form className='ContactForm' name='Contact-Form' netlify>
+        <p>Name</p>
+        <input type='text' name='Name' placeholder='Enter Your Name...' required />
+        <p>Email</p>
+        <input type='email' name='Email' placeholder='Enter Your Email...' required/>
+        <p>Phone Number</p>
+        <input type='tel' name='Phone' placeholder='Enter Your Phone Number...'required />
+        <p>How did you Find Us?</p>
+        <input type='text' name='Phone' placeholder='Enter Your Phone Number...'required />
+        <p>Brief Description of the Project</p>
+        <textarea name='Message' placeholder='Describe what your project consists of...'></textarea>
+        <button type='submit' className='CTA'>Submit</button>
+      </form>
       <img src={LargeBreadcrumb} alt="" />
-      <a className='CTA' href="mailto:innovoprodesign@gmail.com">Book a Call!</a>
     </section>
     </>
   );

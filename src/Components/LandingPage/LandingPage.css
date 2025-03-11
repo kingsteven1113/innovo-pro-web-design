@@ -52,6 +52,7 @@
   display: flex;
   flex-direction: column;
   gap: 67px;
+  z-index: 10000
 }
 
 .CompanyName {
@@ -63,6 +64,7 @@
   margin-top: 140px;
   filter: drop-shadow(5px 7px 11px #00000050);
   color: white;
+  z-index: 10000;
 }
 .H1 {
   margin: 0;
@@ -84,21 +86,7 @@
 .HeroCTA {
   justify-content: center;
   filter: drop-shadow(0px 0px 10px #d9ff0180);
-  animation: HeroCTA-Animation 2s;
-  animation-iteration-count: 1;
-  animation-delay: 7.5s;
-}
-@keyframes HeroCTA-Animation {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-  }
-
+  
 }
 .HeroCTA a {
   font-size: 24px !important;
@@ -112,13 +100,13 @@
   padding-left: 45px;
   padding-right: 45px;
   margin-top: 0px;
-  gap: 15px;
+  gap: 1vw;
   z-index: 1;
 }
 
 .HeroSectionBox {
-  width: 300px;
-  height: 300px;
+  width: 15vw;
+  aspect-ratio: 1/1;
   box-shadow: inset 0px 0px 20px #ffffff05, 0px 0px 20px #ffffff05;
   background-color: #ffffff05;
   border-radius: 15px;
@@ -742,6 +730,55 @@ gap: 25px;
 
 .Border {
   border-radius: 0px !important;
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 50%;
+  clip:content-box;
+  margin-bottom: 50px;
+  
+}
+
+.ContactForm input {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #2A933C;
+  background-color: white;
+  color: #0B4B25;
+  font-weight: 700;
+  font-family: Instrument Sans;
+  
+}
+
+
+.ContactForm textarea {
+  padding: 15px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid #2A933C;
+  background-color: white;
+  color: #0B4B25;
+  font-weight: 500;
+  font-family: Instrument Sans;
+  resize: vertical;
+}
+.ContactForm button {
+  border-color: #2A933C;
+  border-width: 2px;
+  font-size: 24px;
+  margin-top: 25px;
+  
+}
+
+.ContactForm p {
+  font-size: 18px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  color: #87C440;
+  text-align: left;
 }
 
 
