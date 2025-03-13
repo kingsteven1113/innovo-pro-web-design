@@ -52,7 +52,6 @@
   display: flex;
   flex-direction: column;
   gap: 67px;
-  z-index: 10000
 }
 
 .CompanyName {
@@ -68,14 +67,14 @@
 }
 .H1 {
   margin: 0;
-  font-size: 96px;
+  font-size: 84px;
   font-family: Instrument Sans;
   filter: drop-shadow(12px 15px 11px #00000050);
   color: white;
 }
 
 .HeroParagraph {
-  margin-top: 300px;;
+  margin-top: 250px;;
   font-size: 36px;
   font-family: Instrument Sans;
   font-weight: 600;
@@ -761,6 +760,7 @@ gap: 25px;
   color: #0B4B25;
   font-weight: 700;
   font-family: Instrument Sans;
+  cursor: pointer;
   
 }
 
@@ -792,6 +792,61 @@ gap: 25px;
   text-align: left;
 }
 
+.WhatWeDoSection {
+  background:linear-gradient(#2c2c2c, rgba(0, 0, 0, 0.6)), url('../../assets/Services-Image.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+.WhatWeDoHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  
+  margin-left: 169.5px;
+  gap: 50px;
+}
+
+.WhatWeDoSection h2 {
+  font-size: 64px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  filter: drop-shadow(5px 20px 11px #00000050);
+  color: white;
+}
+
+.WhatWeDoSection p {
+  font-size: 24px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  text-align: left;
+  width: 40%;
+  color: white;
+  margin-left: 169.5px;
+  gap: 50px;
+}
+.WhatWeDoSection button {
+  font-size: 24px;
+  font-family: Instrument Sans;
+  font-weight: 600;
+  color: #0B4B25;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  float: left;
+  margin-left: 169.5px;
+}
+.WhatWeDoSection button:hover {
+  background-color: #2A933C;
+  border: none;
+  color: #fff;
+  transition: 0.25s;
+}
 
 
 @media only screen and (min-width: 1375px) {

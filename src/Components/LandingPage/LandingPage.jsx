@@ -24,6 +24,7 @@ import StayHealthy from '../../assets/StayHealthy.webp'
 
 
 
+
 const OpenJFE = () => {
   const JFE = document.getElementById("JFE");
   const UXE = document.getElementById("UXE");
@@ -91,6 +92,13 @@ const OpenSUXE = () => {
   }
 }
 
+function FormScroll() {
+  const AboutMe = document.getElementById("Contact");
+  AboutMe.scrollIntoView(true);
+  
+  
+}
+
 
 const LandingPage = () => {
   return (
@@ -103,31 +111,42 @@ const LandingPage = () => {
         <img src={Computer} alt="" />
       </div>
       <div className='HeroSectionGrid'>
-        <div className='HeroSectionBox LogoInBox'> <img className='BackgroundLogos' src={FigmaLogo} alt="" /></div>
+        <div className='HeroSectionBox LogoInBox'> <img className='BackgroundLogos' src={FigmaLogo} alt="Figma Logo" /></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={HTMLLogo} alt="" /></div><br />
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={AdobeLogo} alt="" /></div>
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={HTMLLogo} alt="HTML Logo" /></div><br />
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={AdobeLogo} alt="Adobe Cloud Logo" /></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={JSLogo} alt="" /></div><br />
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={ReactLogo} alt="" /></div>
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={JSLogo} alt="Javascript Logo" /></div><br />
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={ReactLogo} alt="React Logo" /></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
         <div className='HeroSectionBox'></div>
-        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={CSSLogo} alt="" /></div><br />
+        <div className='HeroSectionBox LogoInBox'><img className='BackgroundLogos' src={CSSLogo} alt="CSS Logo" /></div><br />
       </div>
       <div className='HeroTopLayer'>
       <div className='HeroHeaders'>
         <h3 className='CompanyName'>Innovo Pro Web Design</h3>
-        <h1 className='H1'>We Build Websites</h1>
+        <h1 className='H1'> Custom Website Solutions to <br />Boost Online Presence</h1>
       </div>
       <p className='HeroParagraph'>Helping the world discover you!</p>
-      <div className='HeroCTA'><a className='CTA' href="mailto:innovoprodesign@gmail.com">Book a Call!</a></div>
+      <div className='HeroCTA'><a className='CTA' onClick={FormScroll}>Book a Call!</a></div>
       </div>
      
+    </section>
+
+    <section id='WhatWeDo' className='WhatWeDoSection'>
+      <div className='WhatWeDoHeader'>
+        <h2>What We Do</h2>
+        <img className='WhatWeDoBreadcrumb' src={HeaderBreadcrumb2} alt="" />
+      </div>
+        <div>
+          <p>Our mission is to empower businesses and individuals by creating stunning, user-centric static websites that reflect their unique brand identity and drive online success. We specialize in custom-coded HTML and CSS websites, ensuring that each project is tailored to meet the specific needs of our clients. Through our expertise in design, functionality, and user experience, we aim to enhance our clients' digital presence, engage their audience, and achieve their goals. We believe in building long-lasting partnerships with our clients, providing exceptional service, and continuously evolving to stay at the forefront of web design trends and technologies.</p>
+          <button className='CTA' onClick={FormScroll}>Book A Call</button>
+        </div>
     </section>
     <section id='Process'>
       <div>
@@ -166,7 +185,7 @@ const LandingPage = () => {
           </div>
         </div>
         <img className='DottedLine' src={DottedLine} alt="" />
-        <p className='Process-Paragraph'>We have developed a smooth clean procces from an idea for a website to a fully built website that is ready for the world to experience. You will be a part of the entire process and this process leads to communitcating with us throughout each step so that the end product is something you're happy with and something we can be proud of.</p>
+        <p className='Process-Paragraph'>We have developed a smooth clean process from an idea for a website to a fully built website that is ready for the world to experience. You will be a part of the entire process and this process leads to communitcating with us throughout each step so that the end product is something you're happy with and something we can be proud of.</p>
       </div>
     </section>
     <section id='Projects' className='ProjectsSection'>
@@ -320,7 +339,7 @@ const LandingPage = () => {
         <img src={InnovoProStoryBreadcrumb} alt="" />
         <h3>The Innovo Pro Story</h3>
         <p>Innovo Pro Web Design was started by Steven King who is a young entrepreneur in the New York Area who looks to use his 7 years of professional design and development experience to support businesses in building their online presence and helping the world discover them. <br /><br />The goal is to provide every client with the personal touch that Innovo Pro brings to deliver a Innovative, Professional and Unique experience not only to our clients but to their customers as well.</p>
-        <a className='CTA' href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
+        <a className='CTA' onClick={FormScroll}>Book A Call!</a>
       </div>
     </section>
 
@@ -349,7 +368,7 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>$1000</h5>
-              <a className='CTA Pricing-CTA' href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
+              <a className='CTA Pricing-CTA' onClick={FormScroll}>Book A Call!</a>
           </div>
         </div>
         <div className='Pricing-Item'>
@@ -366,7 +385,7 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>$150/month</h5>
-              <a className='CTA Pricing-CTA' href="mailto:innovoprodesign@gmail.com">Book A Call!</a>
+              <a className='CTA Pricing-CTA' onClick={FormScroll}>Book A Call!</a>
           </div>
         </div>
       </div>
