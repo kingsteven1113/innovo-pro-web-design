@@ -361,13 +361,13 @@ const LandingPage = () => {
             <h4>Lump Sum</h4>
             <ul>
               <li>Design & Development</li>
-              <li>$25/month Hosting</li>
-              <li>$50 fee Per Additional Page After 5</li>
+              <li>$25/month Hosting and Maintenance</li>
+              <li>$100 fee Per Additional Page After 5</li>
               <li>$50/month Unlimited Edits Add On</li>
             </ul>
           </div>
           <div className='Pricing-Item-Price'>
-              <h5>$1000</h5>
+              <h5>$1700</h5>
               <a className='CTA Pricing-CTA' onClick={FormScroll}>Book A Call!</a>
           </div>
         </div>
