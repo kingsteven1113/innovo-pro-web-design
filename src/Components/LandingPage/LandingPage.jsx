@@ -21,6 +21,7 @@ import InnovoProStoryPhoto from '../../assets/InnovoProStoryPhoto.webp'
 import InnovoProStoryBreadcrumb from '../../assets/InnovoProStoryBreadcrumb.svg'
 import LargeBreadcrumb from '../../assets/LargeBreadcrumb.svg'
 import StayHealthy from '../../assets/StayHealthy.webp'
+import TestimonialImage from '../../assets/Website-Design.webp'
 
 
 
@@ -143,10 +144,60 @@ const LandingPage = () => {
         <h2>What We Do</h2>
         <img className='WhatWeDoBreadcrumb' src={HeaderBreadcrumb2} alt="" />
       </div>
-        <div>
-          <p>Our mission is to empower businesses and individuals by creating stunning, user-centric static websites that reflect their unique brand identity and drive online success. We specialize in custom-coded HTML and CSS websites, ensuring that each project is tailored to meet the specific needs of our clients. Through our expertise in design, functionality, and user experience, we aim to enhance our clients' digital presence, engage their audience, and achieve their goals. We believe in building long-lasting partnerships with our clients, providing exceptional service, and continuously evolving to stay at the forefront of web design trends and technologies.</p>
-          <button className='CTA' onClick={FormScroll}>Book A Call</button>
+        <div className='WhatWeDoContent'>
+          <p>
+            Our mission is to empower businesses and individuals by creating 
+            stunning, user-centric static websites that reflect their unique
+            brand identity and drive online success. We specialize in custom-
+            built websites, ensuring that each project is
+            tailored to meet the specific needs of our clients. Through our
+            expertise in design, functionality, and user experience, we aim to
+            enhance our clients' digital presence, engage their audience, and
+            achieve their goals. We believe in building long-lasting
+            partnerships with our clients, providing exceptional service, and
+            continuously evolving to stay at the forefront of web design trends and technologies.
+          </p>
+          <div className='WhatWeDo-Services'>
+            <div className='WhatWeDo-Services-Item'>
+              <h6>Website Design</h6>
+              <p>We create visually appealing, user-friendly and innovative website designs tailored to your brand.</p>
+            </div>
+            <div className='WhatWeDo-Services-Item'>
+            <h6>Brand Design</h6>
+            
+            <p>We craft unique brand identities that resonate with your audience and elevate your business.</p>
+            </div>
+            <div className='WhatWeDo-Services-Item'>
+            <h6>Website Development</h6>
+            <p>We develop customized responsive, user friendly and functional websites tailor-made to your business and customer needs.</p>
+            </div>
+            {/* <div className='WhatWeDo-Services-Item'>
+            <h6>SEO Management</h6>
+            <p>We optimize your website's content and structure to improve search engine rankings and visibility.</p>
+            </div> */}
+            
+          </div>
+          <button className='CTA WhatWeDo-CTA' onClick={FormScroll}>Book A Call</button>
         </div>
+    </section>
+    <section id='About' className='Innovo-Pro-Story'>
+      <img className='StoryPhoto' src={InnovoProStoryPhoto} alt="" />
+      <div className='StoryInfo'>
+        <img src={InnovoProStoryBreadcrumb} alt="" />
+        <h3>Why Choose <span>Innovo Pro Web Design</span>?</h3>
+        <p>Innovo Pro Web Design was started by Steven King
+          who is a young entrepreneur in the New York Area
+          <span> who looks to use his 7 years of professional design and development experience </span>
+          to support people and businesses
+          in building their online presence and helping the world discover them. <br /><br />
+          The goal is to provide every client with the personal touch 
+          that Innovo Pro brings to deliver a Innovative, Professional and Unique experience 
+          not only to our clients but to their customers as well. <br /> <br />
+          
+          We have helped customers not only create a beautiful site but also <span>see results within the first 3 months of us taking care of their site. </span> 
+          If you're looking to work with someone who will take personal care of your project, we will do that for you!</p>
+        <a className='CTA' onClick={FormScroll}>Book a Call!</a>
+      </div>
     </section>
     <section id='Process'>
       <div>
@@ -332,16 +383,31 @@ const LandingPage = () => {
     </section>
 
 
-
-    <section id='About' className='Innovo-Pro-Story'>
-      <img className='StoryPhoto' src={InnovoProStoryPhoto} alt="" />
-      <div className='StoryInfo'>
-        <img src={InnovoProStoryBreadcrumb} alt="" />
-        <h3>The Innovo Pro Story</h3>
-        <p>Innovo Pro Web Design was started by Steven King who is a young entrepreneur in the New York Area who looks to use his 7 years of professional design and development experience to support businesses in building their online presence and helping the world discover them. <br /><br />The goal is to provide every client with the personal touch that Innovo Pro brings to deliver a Innovative, Professional and Unique experience not only to our clients but to their customers as well.</p>
-        <a className='CTA' onClick={FormScroll}>Book A Call!</a>
+    <section>
+    
+      <div className='Testimonials-Content'>
+      <div className='Testimonials-Text'>
+        <div className='Testimonials-Header'>
+          <h2>Not Convinced?</h2>
+          <img src={HeaderBreadcrumb1} alt="" />
+        </div>
+          <div className='Testimonials-Paragraph'>
+            <p>
+              Ok we get it. Sometimes you need to hear what 
+              others have to say before putting your trust in someone. 
+              And that is a sign of a good business person. 
+              Why don't you take a look at what others have 
+              said about our work and decide for yourself.
+            </p>
+          </div>
+          <a className='CTA Testimonials-CTA' href='https://g.co/kgs/yv7QB2E'>Read Our Google Reviews</a>
+      </div>
+        <img className='Testimonials-Image' src={TestimonialImage} alt="" />
       </div>
     </section>
+
+
+    
 
     <section id='Pricing' className='PricingSection'>
       <div className='PricingHeader'>
@@ -362,12 +428,10 @@ const LandingPage = () => {
             <ul>
               <li>Design & Development</li>
               <li>$25/month Hosting and Maintenance</li>
-              <li>$100 fee Per Additional Page After 5</li>
-              <li>$50/month Unlimited Edits Add On</li>
             </ul>
           </div>
           <div className='Pricing-Item-Price'>
-              <h5>$1700</h5>
+              <h5>Get A Free Quote</h5>
               <a className='CTA Pricing-CTA' onClick={FormScroll}>Book A Call!</a>
           </div>
         </div>
@@ -377,7 +441,7 @@ const LandingPage = () => {
             <ul>
               <li>Design & Development</li>
               <li>Hosting Included</li>
-              <li>$50 fee Per Additional Page After 5</li>
+              <li>Initial $50 fee Per Additional Page After 5</li>
               <li>Unlimited Edits</li>
               <li>Continued Support</li>
               <li>Continued SEO Optimization</li>
@@ -404,7 +468,8 @@ const LandingPage = () => {
         <select type='dropdown' name='How-Did-You-Find-Us?' required>
         <option value="LinkedIn">LinkedIn</option>
         <option value="Google">Google</option>
-        <option value="Business Card">Business Card</option></select>
+        <option value="Business Card">Business Card</option>
+        <option value="Referral">Referral</option></select>
         <p>Brief Description of the Project</p>
         <textarea name='Message' placeholder='Describe what your project consists of...'></textarea>
         <button type='submit' className='CTA'>Submit</button>

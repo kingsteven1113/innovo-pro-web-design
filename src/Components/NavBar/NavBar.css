@@ -266,7 +266,7 @@
     }
     .CenteringNav {
         flex-direction: column;
-        width: 100%;
+        width: 100vw;
     }
     .MobileNav {
         display: flex;
