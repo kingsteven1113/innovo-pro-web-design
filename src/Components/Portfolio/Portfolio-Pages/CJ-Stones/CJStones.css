@@ -1,0 +1,53 @@
+.Intro {
+    font-family: Instrument Sans;
+}
+
+.CJS-Content {
+   color: #3A3436;
+   background-color: white;
+   height: auto;
+}
+
+#CJStonesHeader {
+    padding: 20px;
+    background: linear-gradient(to left, #504412, #3A3436);
+    color: white;
+}
+
+
+.ProjectOverview {
+    text-align: left;
+}
+
+.ProjectOverview h2 {
+    font-size: 36px;
+    font-family: Instrument Sans;
+    margin: 0 !important;
+    padding: 20px ;
+}
+
+.ProjectOverview p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 50px ;
+}
+
+.ProjectOverview h3 {
+    font-size: 24px;
+    font-family: Instrument Sans;
+    margin-top: 20px;
+    padding: 20px ;
+}
+
+.ProjectOverview ol {
+    
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.HeaderImage {
+    width: 100%;
+    height: auto;
+    
+}

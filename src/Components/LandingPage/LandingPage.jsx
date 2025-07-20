@@ -236,7 +236,7 @@ const LandingPage = () => {
           </div>
         </div>
         <img className='DottedLine' src={DottedLine} alt="" />
-        <p className='Process-Paragraph'>We have developed a smooth clean process from an idea for a website to a fully built website that is ready for the world to experience. You will be a part of the entire process and this process leads to communitcating with us throughout each step so that the end product is something you're happy with and something we can be proud of.</p>
+        <p className='Process-Paragraph'>Designing and developing a website involves several key stages that ensure the final product is functional, visually appealing, and user-friendly. The process typically begins with planning and research, where goals, target audience, and required features are defined. Next comes the design phase, during which wireframes and mockups are created to visualize the layout, color scheme, and overall user interface. After design approval, the development phase starts, where front-end technologies (like HTML, CSS, and JavaScript) and back-end technologies (such as databases and server-side scripting) are used to build the website’s functionality. Once the site is built, it undergoes testing to fix bugs and ensure compatibility across different devices and browsers. Finally, the website is launched and maintained regularly to keep content updated and security features current.</p>
       </div>
     </section>
     <section id='Projects' className='ProjectsSection'>
@@ -381,7 +381,7 @@ const LandingPage = () => {
       </div>
     </section>
     </section>
-
+ 
 
     <section>
     

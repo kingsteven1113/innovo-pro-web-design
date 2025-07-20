@@ -94,7 +94,7 @@ const NavBar = () => {
         <>
         <div className="CenteringNav">
             <div className="NavBar">
-                <a className="Logo" onClick={HeroScroll}><img src={CompanyLogo} alt="Company Logo which is a geometric logo showing the letters I and P with a gradient of various shades of green." /></a>
+                <a className="Logo" href="/"><img src={CompanyLogo} alt="Company Logo which is a geometric logo showing the letters I and P with a gradient of various shades of green." /></a>
                 <div className="CenterNav">
                     <a className="NavItem" onClick={ProcessScroll}>Our Process</a> 
                     <a className="NavItem" onClick={ProjectsScroll}>Projects</a>

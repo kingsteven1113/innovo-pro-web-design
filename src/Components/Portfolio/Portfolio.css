@@ -1,0 +1,66 @@
+.Portfolio {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
+    font-family: Instrument Sans;
+}
+.Menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+    width: 25%;
+    margin-bottom: 25px;
+    text-align: left;
+    list-style: none;
+    justify-content: space-between;
+}
+.Menu li {
+    padding: 15px;
+    box-shadow: inset 0px 0px 20px #ffffff05,  0px 0px 10px #87C44050 ;
+    background-color: #ffffff05;
+    border-radius: 15px;
+    font-family: Instrument Sans;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    
+}
+.Menu li:hover {
+    background-color: #87C44070;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.Content {
+    width: 75%;
+    margin-top: 100px;
+    overflow: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    border-radius: 15px;
+    color: black;
+}
+
+.Header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+ .Header img {
+    width: 50px;
+    height: 50px;
+ }
+ h1 {
+   font-size: 64px;
+   font-family: Instrument Sans;
+ }
+
+h2 {
+   font-size: 36px;
+   font-family: Instrument Sans;
+   margin: 5px;
+ }
+
