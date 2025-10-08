@@ -34,6 +34,19 @@ const Portfolio = () => {
               <h2>Art Cloud</h2>
               <p> UX/UI Design</p>
           </li>
+          <li onClick={() => setView('art-cloud')}>
+              <h2>Art Cloud</h2>
+              <p> UX/UI Design</p>
+          </li>
+          <li onClick={() => setView('art-cloud')}>
+              <h2>Art Cloud</h2>
+              <p> UX/UI Design</p>
+          </li>
+          <li onClick={() => setView('art-cloud')}>
+              <h2>Art Cloud</h2>
+              <p> UX/UI Design</p>
+          </li>
+          
         
     </div>
     <div className='Content'>
