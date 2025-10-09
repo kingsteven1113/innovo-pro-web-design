@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { IoIosMenu } from "react-icons/io";
 import './NavBar.css'
 import CompanyLogo from '../../assets/IPWD-Logo.svg'
@@ -100,7 +101,7 @@ const NavBar = () => {
                     <a className="NavItem" onClick={ProjectsScroll}>Projects</a>
                     <a className="NavItem" onClick={AboutScroll}>About</a>
                     <a className="NavItem" onClick={PricingScroll}>Pricing</a>
-                    <a className="NavItem" href="/portfolio">Portfolio</a>
+                    <Link className="NavItem" to="/portfolio">Portfolio</Link>
                 </div>
                 <a className="CTA" onClick={FormScroll}>Book a Call!</a>
             </div>
