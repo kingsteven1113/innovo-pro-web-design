@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import BackgroundTube from '../../assets/BackgroundTubeImage.svg'
 import AdobeLogo  from '../../assets/Adobe-Logo.svg'
