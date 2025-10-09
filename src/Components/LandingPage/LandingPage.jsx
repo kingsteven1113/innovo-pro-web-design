@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css';
 import BackgroundTube from '../../assets/BackgroundTubeImage.svg'
 import AdobeLogo  from '../../assets/Adobe-Logo.svg'
@@ -22,6 +23,7 @@ import InnovoProStoryBreadcrumb from '../../assets/InnovoProStoryBreadcrumb.svg'
 import LargeBreadcrumb from '../../assets/LargeBreadcrumb.svg'
 import StayHealthy from '../../assets/StayHealthy.webp'
 import TestimonialImage from '../../assets/Website-Design.webp'
+import { Link } from 'react-router-dom';
 
 
 
@@ -474,7 +476,7 @@ const LandingPage = () => {
         <textarea name='Message' placeholder='Describe what your project consists of...'></textarea>
         <button type='submit' className='CTA'>Submit</button>
       </form>
-      <img src={LargeBreadcrumb} alt="" />
+      <Link to='/portfolio'><img src={LargeBreadcrumb} alt="" /></Link>
     </section>
     </>
   );
