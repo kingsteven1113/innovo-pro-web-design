@@ -100,6 +100,7 @@ const NavBar = () => {
                     <a className="NavItem" onClick={ProjectsScroll}>Projects</a>
                     <a className="NavItem" onClick={AboutScroll}>About</a>
                     <a className="NavItem" onClick={PricingScroll}>Pricing</a>
+                    <a className="NavItem" href="/portfolio">Portfolio</a>
                 </div>
                 <a className="CTA" onClick={FormScroll}>Book a Call!</a>
             </div>
