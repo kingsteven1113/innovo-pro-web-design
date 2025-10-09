@@ -11,6 +11,7 @@ import CJStonesBA from '../../../../assets/CJ Stones Before and After.png'
 import CJStonesLogo from '../../../../assets/CJStonesLogoArtboards.jpg'
 import CJStonesApparelAndDecal from '../../../../assets/Decal and Apparell.jpg'
 import CJStonesApparelAndDecalVideo from '../../../../assets/Decal-Video.mp4'
+import CJStonesLogoVideo from '../../../../assets/CJStones-Intro-Outro-Animation.mp4'
 
 
 const CJStonesProject = () => {
@@ -54,7 +55,9 @@ const CJStonesProject = () => {
                             <ol>
                                 <li>
                                     <h3>New Branding</h3>
+                                        <video className="CJStonesLogoVideo" loop muted autoPlay src={CJStonesLogoVideo}></video>
                                         <img src={CJStonesLogo} alt="" className="CJStonesLogo" />
+                                        
                                     <h4>Use Cases:</h4>
                                     <ol>
                                         <li>Apparel</li>
