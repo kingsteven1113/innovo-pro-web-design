@@ -475,7 +475,7 @@ const LandingPage = () => {
         <textarea name='Message' placeholder='Describe what your project consists of...'></textarea>
         <button type='submit' className='CTA'>Submit</button>
       </form>
-      <Link to='/portfolio'><img src={LargeBreadcrumb} alt="" /></Link>
+      <img src={LargeBreadcrumb} alt="" />
     </section>
     </>
   );

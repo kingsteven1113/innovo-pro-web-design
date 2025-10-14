@@ -41,6 +41,7 @@
 .Content {
     width: 75%;
     margin-top: 100px;
+    margin-bottom: 25px;
     overflow: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer and Edge */
@@ -69,3 +70,23 @@ h2 {
    margin: 5px;
  }
 
+ .NavItem {
+    display: none;
+ }
+
+ .WebsiteLink {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #87C440;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: Instrument Sans;
+    justify-content: bottom;
+ }
