@@ -70,10 +70,6 @@ h2 {
    margin: 5px;
  }
 
- .NavItem {
-    display: none;
- }
-
  .WebsiteLink {
     display: inline-block;
     position: absolute;
