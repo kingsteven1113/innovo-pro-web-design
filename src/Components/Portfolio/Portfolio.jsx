@@ -17,6 +17,10 @@ const Portfolio = () => {
     <>
   <div className='Portfolio' id='Portfolio'>
     <div className='Menu'>
+          <li onClick={() => setView('intro')}>
+              <h2>Introduction</h2>
+              <p> Overview of Me and My Work</p>
+          </li>
         
           <li onClick={() => setView('cjstones')}>
               <h2>CJ Stones</h2>
@@ -27,16 +31,16 @@ const Portfolio = () => {
               <p> Web Design</p>
           </li>
           <li onClick={() => setView('jefit')}>
-              <h2>JeFit</h2>
-              <p> UX/UI Redesign</p>
+              <h2>Alberto Guzman Catering</h2>
+              <p> Website Design</p>
+          </li>
+          <li onClick={() => setView('art-cloud')}>
+              <h2>Logo Library</h2>
+              <p> My Vault of Logos</p>
           </li>
           <li onClick={() => setView('art-cloud')}>
               <h2>Art Cloud</h2>
-              <p> UX/UI Design</p>
-          </li>
-          <li onClick={() => setView('art-cloud')}>
-              <h2>Art Cloud</h2>
-              <p> UX/UI Design</p>
+              <p> Coming Soon</p>
           </li>
           <li onClick={() => setView('art-cloud')}>
               <h2>Art Cloud</h2>
