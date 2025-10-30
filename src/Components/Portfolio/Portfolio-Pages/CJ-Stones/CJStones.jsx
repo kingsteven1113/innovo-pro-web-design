@@ -17,12 +17,7 @@ import CJStonesSEOChart from '../../../../assets/SEO Chart.png'
 import LargeBreadcrumb from '../../../../assets/LargeBreadcrumb.svg'
 import EmailIcon from '../../../../assets/Email Icon.svg'
 import LinkedInIcon from '../../../../assets/LinkedIn Icon.svg'
-import KugeloffProof from '../../../../assets/KugeloffMaurice.jpg'
-import KugeloffComplete from '../../../../assets/Kugeloff.jpeg'
-import KalarchianProof from '../../../../assets/Kalarchian-Mardig-and-Linda-Gail.jpg'
-import KalarchianComplete from '../../../../assets/Kalarchian.jpg'
-import DevirProof from '../../../../assets/Devir-Barbara-Richard.jpg'
-import DevirComplete from '../../../../assets/Devir.jpg'
+
 
 
 const CJStonesProject = () => {
@@ -168,7 +163,12 @@ const CJStonesProject = () => {
                                     <p> In addition to the website redesign and branding, I also designed custom headstones for the company. I helped design and manufacture <b>hundreds of headstones</b>. This included working with customers to create a design that was unique and personalized to their loved one. I used <b>Adobe Illustrator, Adobe Photoshop and Gerber Omega 7</b> to create the designs and then worked with the production team to ensure that the designs were accurately represented on the final product. <br /><br />
                                         A requirement of the designs was creating what is called a "Proof". This is a to-scale schematic rendering of the stone for approval from the customer. This would ensure that the family knew exactly what they were receiving before we began work on manufacturing the stone. Below are examples of the proofs and design work that was done.</p>
                                 <div className="StoneImages">
-                                    
+                                    <img src='' alt="" />
+                                    <img src='' alt="" />
+                                    <img src='' alt="" />
+                                    <img src='' alt="" />
+                                    <img src='' alt="" />
+                                    <img src='' alt="" />
 
                                 </div>
                                 
