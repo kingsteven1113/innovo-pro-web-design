@@ -21,8 +21,8 @@ import KugeloffProof from '../../../../assets/KugeloffMaurice.jpg'
 import KugeloffComplete from '../../../../assets/Kugeloff.jpeg'
 import KalarchianProof from '../../../../assets/Kalarchian-Mardig-and-Linda-Gail.jpg'
 import KalarchianComplete from '../../../../assets/Kalarchian.jpg'
+import DevirProof from '../../../../assets/Devir-Barbara-Richard.jpg'
 
-import DevirComplete from '../../../../assets/Devir.jpg'
 
 
 const CJStonesProject = () => {
@@ -170,10 +170,10 @@ const CJStonesProject = () => {
                                 <div className="StoneImages">
                                     <img src={KugeloffProof} alt="" />
                                     <img src={KalarchianProof} alt="" />
-                                    
+                                    <img src={DevirProof} alt="" />
                                     <img src={KugeloffComplete} alt="" />
                                     <img src={KalarchianComplete} alt="" />
-                                    <img src={DevirComplete} alt="" />
+                                    
 
                                 </div>
                                 
