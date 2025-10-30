@@ -84,7 +84,7 @@ const CJStonesProject = () => {
 
                         <div className="ProjectDeliverables">
 
-                            <h2>Deliverables</h2>
+                            <h2>Deliverables:</h2>
                             <ol>
                                 <li>
                                     <h3 id="Branding">New Branding</h3>
