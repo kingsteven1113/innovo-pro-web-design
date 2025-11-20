@@ -43,6 +43,7 @@ const Intro = () => {
             </div>
             <div className="About-Me-Section">
                 <h2>About Me</h2>
+                <p>I am Web Designer/Developer growing up in Westchester County, New York. My skills lie in HTML, CSS, JavaScript, React, catering my skills specifically to Website Development. Teaching myself how to code, I work hard to take mine and others' designs and bring them to life.</p>
             </div>
         </div>
         </div>
