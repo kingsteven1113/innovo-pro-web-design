@@ -17,13 +17,6 @@ import CJStonesSEOChart from '../../../../assets/SEO Chart.png'
 import LargeBreadcrumb from '../../../../assets/LargeBreadcrumb.svg'
 import EmailIcon from '../../../../assets/Email Icon.svg'
 import LinkedInIcon from '../../../../assets/LinkedIn Icon.svg'
-import KugeloffProof from '../../../../assets/Kugeloff-Maurice.jpg'
-import KugeloffComplete from '../../../../assets/Kugeloff.jpeg'
-import KalarchianProof from '../../../../assets/Kalarchian-Mardig-and-Linda-Gail.jpg'
-import KalarchianComplete from '../../../../assets/Kalarchian.jpg'
-import DevirProof from '../../../../assets/Devir-Barbara-Richard.jpg'
-import DevirComplete from '../../../../assets/Devir.jpg'
-import Rende from '../../../../assets/Rende.jpg'
 
 
 
