@@ -23,6 +23,7 @@ import KalarchianProof from '../../../../assets/Kalarchian-Mardig-and-Linda-Gail
 import KalarchianComplete from '../../../../assets/Kalarchian.jpg'
 import DevirProof from '../../../../assets/Devir-Barbara-Richard.jpg'
 import DevirComplete from '../../../../assets/Devir.jpg'
+import Rende from '../../../../assets/Rende.jpg'
 
 
 
@@ -171,6 +172,7 @@ const CJStonesProject = () => {
                                 <div className="StoneImages">
                                     <img src={KalarchianProof} alt="" />
                                     <img src={DevirProof} alt="" />
+                                    <img src={Rende} alt="" />
                                     
 
                                 </div>
