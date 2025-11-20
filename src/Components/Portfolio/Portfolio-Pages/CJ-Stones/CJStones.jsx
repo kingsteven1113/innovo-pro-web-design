@@ -171,8 +171,7 @@ const CJStonesProject = () => {
                                 <div className="StoneImages">
                                     <img src={KalarchianProof} alt="" />
                                     <img src={DevirProof} alt="" />
-                                    <img src={KalarchianComplete} alt="" />
-                                   <img src={DevirComplete} alt="" />
+                                    
 
                                 </div>
 
