@@ -18,8 +18,6 @@ import LargeBreadcrumb from '../../../../assets/LargeBreadcrumb.svg'
 import EmailIcon from '../../../../assets/Email Icon.svg'
 import LinkedInIcon from '../../../../assets/LinkedIn Icon.svg'
 
-import Rende from '../../../../assets/Rende.jpg'
-
 
 
 const CJStonesProject = () => {
