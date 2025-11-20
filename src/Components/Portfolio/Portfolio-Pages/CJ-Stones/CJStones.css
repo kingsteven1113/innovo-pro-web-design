@@ -68,7 +68,7 @@
 }
 
 .ProjectDeliverables {
-    text-align: left;
+    
     margin-top: 50px;
 }
 
@@ -78,6 +78,7 @@
     font-family: Instrument Sans;
     margin: 0 !important;
     padding: 20px ;
+    text-align: left;
 }
 
 .ProjectDeliverables p {
@@ -85,6 +86,7 @@
     line-height: 1.6;
     margin-top: 10px;
     padding: 50px ;
+    text-align: left;
 }
 
 .ProjectDeliverables h3 {
@@ -92,10 +94,11 @@
     font-family: Instrument Sans;
     margin-top: 20px;
     padding: 20px ;
+    text-align: left;
 }
 
 .ProjectDeliverables ol {
-    
+    text-align: left;
     font-size: 18px;
     line-height: 1.8;
 }
@@ -131,22 +134,32 @@
 }
 .UseCaseImages img {
     width: 33%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 .SearchPhoto {
     filter: drop-shadow(#00000050 -5px 5px 8px);
-    border-radius: 10px;
-    margin-left: 50px;
     
+    text-align: center;
+    
+}
+
+.SearchPhoto img {
+
+    border-radius: 10px;
 }
 
 .SEOChart {
     filter: drop-shadow(#00000050 -5px 5px 8px);
-    border-radius: 10px;
-    margin-left: 150px;
     
+    text-align: center;
+    
+}
+
+.SEOChart img {
+
+    border-radius: 10px;
 }
 
 .CJStonesWebsite {
@@ -169,7 +182,20 @@
     background-color: #87C440;
     color: white;
     transition: 0.3s;
+    
 }
+
+@keyframes expand {
+    0%, 100% {
+        transform: scale(1);
+        
+    }
+    50% {
+        transform: scale(1.1);
+        
+    }
+}
+
 
  .WebsiteLink {
     display: inline-block;
@@ -188,6 +214,7 @@
     justify-content: bottom;
     transition: 0.3s;
     z-index: 10;
+    animation: expand 10s infinite;
  }
 
  .WebsiteLink:hover {
@@ -214,4 +241,9 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: #00000050 0px 0px 8px;
+}
+
+.Conclusion {
+    margin-top: 50px;
+    text-align: center !important
 }

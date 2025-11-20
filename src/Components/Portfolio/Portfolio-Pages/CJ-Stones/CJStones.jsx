@@ -129,7 +129,7 @@ const CJStonesProject = () => {
                                         <li>
                                             
                                             <h4>Custom Scripting for Internal Tools</h4>
-                                            <img className="SearchPhoto" src={CJStonesSearchFeature} alt="" />
+                                            <div className="SearchPhoto"><img className="SearchPhoto" src={CJStonesSearchFeature} alt="" /></div>
                                             <p>This included a search feature for headstones. Since they have created hundreds of monuments for their customers, there needed to be a way to search the site for specific ones whenever a customer made mention to a specific stone. <br /><br />
                                                 
                                                 The solution is a lightweight front end Javascript that changes CSS properties based on what is typed into the search bar. At this point in time, it reads the ALT text of each image and changes CSS properties to make the relevant ones visible and the irrelevant ones hidden. This has made it almost effortless to find a stone that a customer mentions over the phone. <br /><br /> 
@@ -156,7 +156,7 @@ const CJStonesProject = () => {
                                             
 
                                             <h5>Results:</h5>
-                                            <img className="SEOChart" src={CJStonesSEOChart} alt="" />
+                                            <div className="SEOChart"><img src={CJStonesSEOChart} alt="" /></div>
                                             <p>I began working on the website in 2023 and began focusing on SEO  in January of 2024. Since then, the site has jumped in Organic Traffic from a fluctuating 10-20 hits per month to averaging 100-200 hits per month through Organic SEO. This SEO strategy took some time to see success but through consistent improvement and adjustment, we began to see an increase in engagement in the last 10 months leading to new customers from various places that were not reached before hand. <br /><br /></p>
 
 
@@ -175,7 +175,7 @@ const CJStonesProject = () => {
                                    <img src={DevirComplete} alt="" />
 
                                 </div>
-                                
+
                                 </li>
                                 <li>
                                     <h3 id="DigitalContentStrategy">Digital Content Strategy (Ongoing Project)</h3>

@@ -1,0 +1,41 @@
+.Intro-Hero {
+    display: flex;
+    padding: 40px 20px;
+    gap: 20px;
+}
+.Intro-Hero p, h2, h3 {
+    text-align: left;
+}
+.Intro-Hero img {
+    width: 45%;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 40px;
+    filter: drop-shadow(-15px 15px 0px #2A933C);
+}
+.Scroll-Down-Arrow {
+    width: 100%;
+    margin-top: 50px;
+    color: #2A933C;
+    animation: bounce 4s infinite;
+    transition : 0.3s;
+    
+}
+
+.Scroll-Down-Arrow:hover {
+    color: #87C440;
+    transition: 0.3s;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.About-Me-Section {
+    text-align: left;
+    margin-top: 100px;
+}
