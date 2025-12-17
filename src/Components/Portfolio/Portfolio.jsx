@@ -28,11 +28,7 @@ const Portfolio = () => {
           </li>
           <li onClick={() => setView('tranquilo-cafe')}>
               <h2>Tranquilo Cafe</h2>
-              <p> Web Design</p>
-          </li>
-          <li onClick={() => setView('jefit')}>
-              <h2>Alberto Guzman Catering</h2>
-              <p> Website Design</p>
+              <p> Web Design (Personal Project)</p>
           </li>
           <li onClick={() => setView('art-cloud')}>
               <h2>Logo Library</h2>
