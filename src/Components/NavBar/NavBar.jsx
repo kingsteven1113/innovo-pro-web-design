@@ -53,40 +53,40 @@ const NavBar = () => {
 
     function HeroScroll() {
         const AboutMe = document.getElementById("Hero");
-        AboutMe.scrollIntoView(true);
+        AboutMe.scrollIntoView(smooth);
         
         
       }
 
       function ProcessScroll() {
         const AboutMe = document.getElementById("Process");
-        AboutMe.scrollIntoView(true);
+        AboutMe.scrollIntoView(smooth);
         
         
       }
 
     function AboutScroll() {
         const AboutMe = document.getElementById("About");
-        AboutMe.scrollIntoView(true);
+        AboutMe.scrollIntoView({ behavior: "smooth" });
         
         
       }
       function ProjectsScroll() {
         const AboutMe = document.getElementById("Projects");
-        AboutMe.scrollIntoView(true);
+        AboutMe.scrollIntoView({ behavior: "smooth" });
         
        
       
       }
       function PricingScroll() {
         const AboutMe = document.getElementById("Pricing");
-        AboutMe.scrollIntoView(true);
+        AboutMe.scrollIntoView({ behavior: "smooth" });
         
         
       }
       function FormScroll() {
         const AboutMe = document.getElementById("Contact");
-        AboutMe.scrollIntoView(true);
+        AboutMe.scrollIntoView({ behavior: "smooth" });
         
         
       }

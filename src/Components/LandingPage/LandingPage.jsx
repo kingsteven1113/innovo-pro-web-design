@@ -96,7 +96,7 @@ const OpenSUXE = () => {
 
 function FormScroll() {
   const AboutMe = document.getElementById("Contact");
-  AboutMe.scrollIntoView(true);
+  AboutMe.scrollIntoView({ behavior: "smooth" });
   
   
 }
