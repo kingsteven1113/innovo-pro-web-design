@@ -38,6 +38,10 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+.MenuToggle {
+    display: none; /* Hidden by default, shown in responsive design */
+}
 .Content {
     width: 75%;
     margin-top: 100px;
@@ -142,6 +146,249 @@ h2 {
     background-color: #0d5000;
     height: 2px;
   }
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+/* TABLET: 768px to 1024px */
+@media (max-width: 1024px) {
+    /* Match mobile: stack layout and wrapped menu for tablets */
+    .Portfolio {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .Menu {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        justify-content: flex-start;
+        overflow: visible;
+        max-height: none;
+    }
+
+    .Menu li {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 150px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .Content {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: clamp(24px, 5vw, 48px);
+    }
+
+    h2 {
+        font-size: clamp(18px, 4vw, 28px);
+    }
+}
+
+/* Collapsible menu behavior for tablet/mobile */
+@media (max-width: 1024px) {
+    .Menu {
+        transition: max-height 300ms ease, opacity 300ms ease;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+    }
+
+    .Menu.open {
+        max-height: 1000px; /* large enough to show items */
+        opacity: 1;
+        overflow: visible;
+    }
+
+    .MenuToggle {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(0,0,0,0.6);
+        border: 1px solid rgba(135,196,64,0.95);
+        color: white;
+        margin-top: 150px;
+        margin-left: 10px;
+        cursor: pointer;
+        z-index: 10000;
+        position: relative;
+        padding: 10px 14px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+        transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
+        backdrop-filter: blur(6px);
+    }
+
+    .MenuToggle:hover {
+        background-color: #87C44070;
+        cursor: pointer;
+        transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease, border 160ms ease;
+        box-shadow: 0 12px 28px rgba(0,0,0,0.5);
+        border: none;
+    }
+
+    .MenuToggle:focus {
+        outline: 3px solid rgba(135,196,64,0.25);
+        outline-offset: 2px;
+    }
+
+    /* MenuToggle shows the currently active menu item */
+    .MenuToggle .label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .MenuToggle .label h2 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 1;
+        font-family: Instrument Sans;
+        color: white;
+    }
+
+    .MenuToggle .label p {
+        margin: 0;
+        font-size: 12px;
+        color: #d6ffd6;
+        opacity: 0.9;
+        font-family: Instrument Sans;
+    }
+
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        white-space: nowrap;
+        border: 0;
+    }
+}
+
+/* MOBILE: Below 768px */
+@media (max-width: 768px) {
+    .Portfolio {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+    }
+
+    .Menu {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        justify-content: flex-start;
+        overflow: visible;
+        max-height: auto;
+    }
+
+    .Menu li {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 150px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .Menu li h2 {
+        font-size: clamp(16px, 3vw, 24px);
+    }
+
+    .Menu li p {
+        font-size: 12px;
+        margin: 3px 0;
+    }
+
+    .Content {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    h1 {
+        font-size: clamp(24px, 5vw, 48px);
+    }
+
+    h2 {
+        font-size: clamp(18px, 4vw, 28px);
+    }
+}
+
+/* SMALL MOBILE: Below 480px */
+@media (max-width: 480px) {
+    .Portfolio {
+        padding-left: 8px;
+        padding-right: 8px;
+        gap: 8px;
+    }
+
+    .Menu {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .Menu li {
+        flex: 1 1 100%;
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .Menu li h2 {
+        font-size: 16px;
+    }
+
+    .Menu li p {
+        font-size: 11px;
+    }
+
+    .Content {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: clamp(20px, 6vw, 36px);
+    }
+
+    h2 {
+        font-size: clamp(14px, 4vw, 24px);
+    }
+
+    .ContactIcons {
+        gap: 20px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .Contact-Icon img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .Contact-Icon:hover img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 

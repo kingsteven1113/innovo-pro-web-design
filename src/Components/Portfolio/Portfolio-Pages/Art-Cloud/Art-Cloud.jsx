@@ -14,12 +14,30 @@ const ArtCloudProject = () => {
         <>
         <div>
            <div className='Intro'>
-                <div className='Header'><h1>Logo Library</h1> <img src={FigmaLogo} alt="" /> <img src={AdobeLogo} alt="" /></div>
+                <div className='Header'><h1>Design Library</h1> <img src={FigmaLogo} alt="" /> <img src={AdobeLogo} alt="" /></div>
                      <h2>
-                        The Logo Library is a collection of logos and brand assets that I have designed for various clients and personal projects. Each logo is crafted to reflect the unique identity and values of the brand it represents. <br /><br />
+                        The Logo Library is a collection of Designs and brand assets that I have designed for various clients and personal projects. Each design is crafted to reflect the unique identity and values of the brand it represents. <br /><br />
                      </h2>
                  </div>
                  <div>
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
+                    <img src="" alt="" />
                     <img src="" alt="" />
                     <img src="" alt="" />
                     <img src="" alt="" />

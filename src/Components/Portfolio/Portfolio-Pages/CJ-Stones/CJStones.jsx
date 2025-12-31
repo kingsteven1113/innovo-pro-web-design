@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import './CJStones.css'
 import AdobeLogo  from '../../../../assets/Adobe-Logo.svg'
@@ -21,6 +21,21 @@ import LinkedInIcon from '../../../../assets/LinkedIn Icon.svg'
 
 
 const CJStonesProject = () => {
+
+    const [showWebsiteLink, setShowWebsiteLink] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => {
+            const scrolled = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+            const half = (window.innerHeight || document.documentElement.clientHeight) / 2;
+            setShowWebsiteLink(scrolled > half);
+        };
+
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
 
     function BrandingScroll() {
         const Branding = document.getElementById("Branding");
@@ -46,8 +61,9 @@ const CJStonesProject = () => {
 
     return (
         <>
-        
-            <a className="WebsiteLink" href="https://cjstones.com" target="_blank" rel="noopener noreferrer">Check Out the Website</a>
+            {showWebsiteLink && (
+                <a className="WebsiteLink visible" href="https://cjstones.com" target="_blank" rel="noopener noreferrer">Check Out the Website</a>
+            )}
             <div className='Intro CJS-Content'>
                 <img className="HeaderImage" src={CJStonesBA} alt="" />
                         <div id="CJStonesHeader" className='Header'><h1>CJ Stones</h1> <img src={AdobeLogo} alt="" /> <img src={FigmaLogo} alt="" /> <img src={HTMLLogo} alt="" /><img src={CSSLogo} alt="" /><img src={JSLogo} alt="" /></div>

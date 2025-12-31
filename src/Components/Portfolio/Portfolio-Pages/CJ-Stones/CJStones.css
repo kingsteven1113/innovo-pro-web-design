@@ -198,23 +198,29 @@
 
 
  .WebsiteLink {
-    display: inline-block;
-    position: absolute;
-    bottom: 20px;
-    right: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #87C440;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: Instrument Sans;
-    justify-content: bottom;
-    transition: 0.3s;
-    z-index: 10;
-    animation: expand 10s infinite;
+     display: inline-block;
+     position: fixed;
+     bottom: 24px;
+     right: 24px;
+     padding: 12px 22px;
+     background-color: #87C440;
+     color: white;
+     text-decoration: none;
+     border-radius: 8px;
+     font-size: 18px;
+     font-family: Instrument Sans;
+     z-index: 10000;
+     /* start off-screen to the right */
+     opacity: 0;
+     transform: translateX(140%);
+     pointer-events: none;
+     transition: opacity 360ms ease, transform 360ms cubic-bezier(0.2,0.8,0.2,1);
+ }
+
+ .WebsiteLink.visible {
+     opacity: 1;
+     transform: translateX(0);
+     pointer-events: auto;
  }
 
  .WebsiteLink:hover {
