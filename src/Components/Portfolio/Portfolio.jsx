@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import { Routes, Route } from 'react-router-dom';
 import CJStonesProject from './Portfolio-Pages/CJ-Stones/CJStones';
 import TranquiloCafeProject from './Portfolio-Pages/Tranquilo-Cafe/Tranquilo-Cafe';
@@ -30,8 +31,11 @@ const Portfolio = () => {
     }
   })();
 
+  const title = "Steven King - Web Design & Development";
+
   return (
     <>
+    <Helmet><title>{title}</title></Helmet>
   <div className='Portfolio' id='Portfolio'>
     <button
       className={`MenuToggle ${menuOpen ? 'open' : ''}`}

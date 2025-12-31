@@ -12,6 +12,7 @@ const ArtCloudProject = () => {
 
     return (
         <>
+        
         <div>
            <div className='Intro'>
                 <div className='Header'><h1>Design Library</h1> <img src={FigmaLogo} alt="" /> <img src={AdobeLogo} alt="" /></div>
