@@ -16,6 +16,8 @@
 }
 
 
+
+
 .ProjectOverview {
     margin-top: 50px;
     text-align: left;
@@ -200,14 +202,14 @@
  .WebsiteLink {
      display: inline-block;
      position: fixed;
-     bottom: 24px;
-     right: 24px;
-     padding: 12px 22px;
+     bottom: 40px; /* moved down */
+     right: 60px;  /* moved further left */
+     padding: 20px 32px; /* even larger click area */
      background-color: #87C440;
      color: white;
      text-decoration: none;
      border-radius: 8px;
-     font-size: 18px;
+     font-size: 22px; /* bigger text */
      font-family: Instrument Sans;
      z-index: 10000;
      /* start off-screen to the right */

@@ -1,0 +1,193 @@
+.Intro {
+    font-family: Instrument Sans;
+}
+
+.TC-Content {
+   color: #3A3436;
+   background-color: white;
+   height: auto;
+   padding-bottom: 20px;
+}
+
+#TranquiloHeader {
+    padding: 20px;
+    /* darker gradient for improved contrast with white text */
+    background: linear-gradient(to left, #7A5E3A, #A78E70);
+    color: white;
+}
+
+/* heading text remains white on top of the background */
+#TranquiloHeader h1 {
+    color: white;
+}
+.ProjectOverview {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.ProjectOverview h2 {
+    font-size: 36px;
+    font-family: Instrument Sans;
+    margin: 0 !important;
+    padding: 20px ;
+}
+
+.ProjectOverview p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 50px ;
+}
+
+.ProjectOverview h3 {
+    font-size: 24px;
+    font-family: Instrument Sans;
+    margin-top: 20px;
+    padding: 20px ;
+}
+
+.ProjectOverview ol {
+    
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.HeaderImage {
+    width: 100%;
+    height: auto;
+}
+
+.ToolsUsed {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px ;
+    flex-wrap: wrap;
+}
+
+.ToolsUsed img {
+    height: 100px;
+    width: auto;
+}
+
+.ProjectDeliverables {
+    
+    margin-top: 50px;
+}
+
+.ProjectDeliverables h2 {
+    font-size: 36px;
+    font-family: Instrument Sans;
+    margin: 0 !important;
+    padding: 20px ;
+    text-align: left;
+}
+
+.ProjectDeliverables p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding: 50px ;
+    text-align: left;
+}
+
+.ProjectDeliverables h3 {
+    font-size: 24px;
+    font-family: Instrument Sans;
+    margin-top: 20px;
+    padding: 20px ;
+    text-align: left;
+}
+
+.ProjectDeliverables ol {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.TC-Nav-Button {
+    cursor: pointer;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #87C44070;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.TC-Nav-Button:hover {
+    background-color: #87C440;
+    color: white;
+    transition: 0.3s;
+}
+
+.WebsiteLink {
+     display: inline-block;
+     position: fixed;
+     bottom: 40px;
+     right: 60px;
+     padding: 20px 32px;
+     background-color: #87C440;
+     color: white;
+     text-decoration: none;
+     border-radius: 8px;
+     font-size: 22px;
+     font-family: Instrument Sans;
+     z-index: 10000;
+     opacity: 0;
+     transform: translateX(140%);
+     pointer-events: none;
+     transition: opacity 360ms ease, transform 360ms cubic-bezier(0.2,0.8,0.2,1);
+ }.WebsiteLink.visible {
+     opacity: 1;
+     transform: translateX(0);
+     pointer-events: auto;
+ }
+
+.WebsiteLink:hover {
+    background-color: #437910;
+    transition: 0.3s;
+    color: white;
+ }
+
+.PageImage {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ContactIcons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Contact-Icon {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3A3436;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.Contact-Icon img {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.ContactLine {
+    height: 2px;
+    background: #3A3436;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.Contact-Icon:hover .ContactLine {
+    width: 100%;
+}
+
+.Conclusion {
+    margin-top: 50px;
+    text-align: center !important;
+}

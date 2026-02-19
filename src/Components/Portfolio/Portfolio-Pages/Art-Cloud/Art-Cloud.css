@@ -1,0 +1,85 @@
+.Logo-Library-Grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.Logo-Library-Grid img {
+    width: 18%;
+    height: 150px;
+    object-fit: contain;
+}/* interactive enhancements */
+.LogoItem {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.LogoItem:hover {
+    transform: scale(1.05);
+}
+
+.LogoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+.LogoModalContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+}
+.LogoModalContent img {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+}
+.CloseButton {
+    position: absolute;
+    top: -14px;
+    right: -14px;
+    background: #333; /* dark grey background */
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15%;
+}
+
+
+.CloseX {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    z-index: 10001;
+}
+
+.CloseButton:hover {
+    background: #444;
+}
+
+.CloseButton:hover {
+    background: #444;
+}
+
+@media (max-width: 768px) {
+    .LogoItem {
+        width: 40%;
+        height: auto;
+    }
+}

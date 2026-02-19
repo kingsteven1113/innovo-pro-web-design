@@ -25,15 +25,26 @@ const CJStonesProject = () => {
     const [showWebsiteLink, setShowWebsiteLink] = useState(false);
 
     useEffect(() => {
+        const content = document.querySelector('.Content');
         const onScroll = () => {
-            const scrolled = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
-            const half = (window.innerHeight || document.documentElement.clientHeight) / 2;
-            setShowWebsiteLink(scrolled > half);
+            // depending on where the user scrolls, use container or window
+            const scrolled = content ? content.scrollTop : (window.scrollY || window.pageYOffset || document.documentElement.scrollTop);
+            setShowWebsiteLink(scrolled > 100);
         };
 
         onScroll();
-        window.addEventListener('scroll', onScroll, { passive: true });
-        return () => window.removeEventListener('scroll', onScroll);
+        if (content) {
+            content.addEventListener('scroll', onScroll, { passive: true });
+        } else {
+            window.addEventListener('scroll', onScroll, { passive: true });
+        }
+        return () => {
+            if (content) {
+                content.removeEventListener('scroll', onScroll);
+            } else {
+                window.removeEventListener('scroll', onScroll);
+            }
+        };
     }, []);
 
 
@@ -62,7 +73,7 @@ const CJStonesProject = () => {
     return (
         <>
             {showWebsiteLink && (
-                <a className="WebsiteLink visible" href="https://cjstones.com" target="_blank" rel="noopener noreferrer">Check Out the Website</a>
+                <a className="WebsiteLink visible" href="https://cjstones.com" target="_blank" rel="noopener noreferrer">View Website</a>
             )}
             <div className='Intro CJS-Content'>
                 <img className="HeaderImage" src={CJStonesBA} alt="" />

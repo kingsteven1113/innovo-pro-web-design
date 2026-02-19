@@ -6,6 +6,7 @@ import CJStonesProject from './Portfolio-Pages/CJ-Stones/CJStones';
 import TranquiloCafeProject from './Portfolio-Pages/Tranquilo-Cafe/Tranquilo-Cafe';
 import JeFitProject from './Portfolio-Pages/JeFit/JeFit';
 import ArtCloudProject from './Portfolio-Pages/Art-Cloud/Art-Cloud';
+import PremierDentalProject from './Portfolio-Pages/Premier-Dental/Premier-Dental';
 import Intro from './Portfolio-Pages/Intro/Intro';
 import './Portfolio.css';
 
@@ -25,6 +26,8 @@ const Portfolio = () => {
         return { title: 'JeFit', subtitle: 'App UI' };
       case 'art-cloud':
         return { title: 'Art Cloud', subtitle: 'Logo Library / UX' };
+      case 'premier-dental':
+        return { title: 'Premier Dental', subtitle: 'Web Design & Development' };
       case 'intro':
       default:
         return { title: 'Introduction', subtitle: 'Overview of Me and My Work' };
@@ -64,13 +67,13 @@ const Portfolio = () => {
           <h2>Tranquilo Cafe</h2>
           <p> Web Design (Personal Project)</p>
         </li>
-        <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
-          <h2>Logo Library</h2>
-          <p> My Vault of Logos</p>
+        <li onClick={() => { setView('premier-dental'); setMenuOpen(false); }}>
+          <h2>Premier Dental</h2>
+          <p> Web Design & Development (Personal Project)</p>
         </li>
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
-          <h2>Art Cloud</h2>
-          <p> Coming Soon</p>
+          <h2>Design Library</h2>
+          <p> Collection of Designs & Assets</p>
         </li>
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
           <h2>Art Cloud</h2>
@@ -89,6 +92,8 @@ const Portfolio = () => {
       {view === 'tranquilo-cafe' && <TranquiloCafeProject />}
       {view === 'jefit' && <JeFitProject />}
       {view === 'art-cloud' && <ArtCloudProject />}
+      {view === 'premier-dental' && <PremierDentalProject />}
+      
     </div>
     
   </div>
