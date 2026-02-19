@@ -67,10 +67,10 @@ const Portfolio = () => {
           <h2>Tranquilo Cafe</h2>
           <p> Web Design (Personal Project)</p>
         </li>
-        <li onClick={() => { setView('premier-dental'); setMenuOpen(false); }}>
+        {/*<li onClick={() => { setView('premier-dental'); setMenuOpen(false); }}>
           <h2>Premier Dental</h2>
           <p> Web Design & Development (Personal Project)</p>
-        </li>
+        </li>*/}
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
           <h2>Design Library</h2>
           <p> Collection of Designs & Assets</p>
