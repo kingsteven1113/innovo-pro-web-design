@@ -36,6 +36,22 @@ const TranquiloCafeProject = () => {
         };
     }, []);
 
+    // after ten seconds, add a temporary CSS class to the button if it exists
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            // make sure the link is visible in case the user hasn't scrolled yet
+            setShowLink(true);
+
+            const btn = document.querySelector('.WebsiteLink');
+            if (btn) {
+                btn.classList.add('pulse');
+                // remove the class after animation cycles (3s)
+                setTimeout(() => btn.classList.remove('pulse'), 3000);
+            }
+        }, 10000);
+        return () => clearTimeout(timer);
+    }, []);
+
     function HomeScroll() {
         const el = document.getElementById("HomePage");
         el && el.scrollIntoView({behavior: 'smooth'});
@@ -56,13 +72,14 @@ const TranquiloCafeProject = () => {
     return (
         <>
             {showLink && (
-                <a className="WebsiteLink visible" href="https://www.figma.com/proto/your-link" target="_blank" rel="noopener noreferrer">
+                <a className="WebsiteLink visible" href="https://www.figma.com/design/ZJs5T32jgPEwwEarpcp0sl/The-Playground?node-id=205-1037&t=s4TpiJDCk5BlfVUC-1" target="_blank" rel="noopener noreferrer">
                     View Designs
                 </a>
             )}
 
             <div className='Intro TC-Content'>
                 <img className="HeaderImage" src={TranquiloCafeHero} alt="" />
+
                 <div id="TranquiloHeader" className='Header'>
                     <h1>Tranquilo Cafe</h1>
                     <img src={FigmaLogo} alt="" />
@@ -107,7 +124,7 @@ const TranquiloCafeProject = () => {
                             <img src={TranquiloCafeHero} alt="" className="PageImage" />
                         </li>
                         <li>
-                            <h3 id="MenuPage">Menu Page</h3>
+                            <h3 id="MenuPage">Shop Page</h3>
                             <p>
                                 A clean menu layout presents specialty coffees, teas and pastries with descriptions and prices. I organised the
                                 items into sections, used consistent typography, and added subtle hover states in the prototype to improve

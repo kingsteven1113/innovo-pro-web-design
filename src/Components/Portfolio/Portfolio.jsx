@@ -76,11 +76,11 @@ const Portfolio = () => {
           <p> Collection of Designs & Assets</p>
         </li>
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
-          <h2>Art Cloud</h2>
+          <h2>Coming Soon</h2>
           <p> UX/UI Design</p>
         </li>
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
-          <h2>Art Cloud</h2>
+          <h2>Coming Soon</h2>
           <p> UX/UI Design</p>
         </li>
           

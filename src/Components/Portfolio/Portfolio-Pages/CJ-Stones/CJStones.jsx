@@ -47,6 +47,18 @@ const CJStonesProject = () => {
         };
     }, []);
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowWebsiteLink(true);
+            const btn = document.querySelector('.WebsiteLink');
+            if (btn) {
+                btn.classList.add('pulse');
+                setTimeout(() => btn.classList.remove('pulse'), 3000);
+            }
+        }, 10000);
+        return () => clearTimeout(timer);
+    }, []);
+
 
     function BrandingScroll() {
         const Branding = document.getElementById("Branding");
