@@ -23,6 +23,7 @@ import AllSeasonHomeSecurity from '../../../../assets/All Season Home Guardians.
 import ArchitectVision from '../../../../assets/Architects Vision.png'
 import Axis1 from '../../../../assets/Axis.png'
 import Axis2 from '../../../../assets/Axis-1.png'
+import HeadstonePreviewerLogo from '../../../../assets/Headstone Previewer Logo.png'
 const ArtCloudProject = () => {
     const logos = [
         {src: TheLetterA, alt: 'Logo A'},
@@ -44,6 +45,7 @@ const ArtCloudProject = () => {
         {src: ArchitectVision, alt: 'Architect Vision Logo'},
         {src: Axis1, alt: 'Axis Logo 1'},
         {src: Axis2, alt: 'Axis Logo 2'},
+        {src: HeadstonePreviewerLogo, alt: 'Headstone Previewer Logo'},
     ];
 
     const [modalOpen, setModalOpen] = React.useState(false);

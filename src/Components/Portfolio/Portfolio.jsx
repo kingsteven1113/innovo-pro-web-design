@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import { Routes, Route } from 'react-router-dom';
 import CJStonesProject from './Portfolio-Pages/CJ-Stones/CJStones';
 import TranquiloCafeProject from './Portfolio-Pages/Tranquilo-Cafe/Tranquilo-Cafe';
-import JeFitProject from './Portfolio-Pages/JeFit/JeFit';
+import HeadstonePreviewerProject from './Portfolio-Pages/TheHeadstonePreviewer/TheHeadstonePreviewer';
 import ArtCloudProject from './Portfolio-Pages/Art-Cloud/Art-Cloud';
 import PremierDentalProject from './Portfolio-Pages/Premier-Dental/Premier-Dental';
 import Intro from './Portfolio-Pages/Intro/Intro';
@@ -22,8 +22,8 @@ const Portfolio = () => {
         return { title: 'CJ Stones', subtitle: 'Web & Brand Design' };
       case 'tranquilo-cafe':
         return { title: 'Tranquilo Cafe', subtitle: 'Web Design' };
-      case 'jefit':
-        return { title: 'JeFit', subtitle: 'App UI' };
+      case 'headstone-previewer':
+        return { title: 'The Headstone Previewer', subtitle: 'App UI' };
       case 'art-cloud':
         return { title: 'Art Cloud', subtitle: 'Logo Library / UX' };
       case 'premier-dental':
@@ -71,14 +71,15 @@ const Portfolio = () => {
           <h2>Premier Dental</h2>
           <p> Web Design & Development (Personal Project)</p>
         </li>*/}
+        <li onClick={() => { setView('headstone-previewer'); setMenuOpen(false); }}>
+          <h2>The Headstone Previewer</h2>
+          <p> React Front End Web Application</p>
+        </li>
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
           <h2>Design Library</h2>
           <p> Collection of Designs & Assets</p>
         </li>
-        <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
-          <h2>Coming Soon</h2>
-          <p> UX/UI Design</p>
-        </li>
+        
         <li onClick={() => { setView('art-cloud'); setMenuOpen(false); }}>
           <h2>Coming Soon</h2>
           <p> UX/UI Design</p>
@@ -90,7 +91,7 @@ const Portfolio = () => {
       {view === 'intro' && <Intro />}
       {view === 'cjstones' && <CJStonesProject />}
       {view === 'tranquilo-cafe' && <TranquiloCafeProject />}
-      {view === 'jefit' && <JeFitProject />}
+      {view === 'headstone-previewer' && <HeadstonePreviewerProject />}
       {view === 'art-cloud' && <ArtCloudProject />}
       {view === 'premier-dental' && <PremierDentalProject />}
       
