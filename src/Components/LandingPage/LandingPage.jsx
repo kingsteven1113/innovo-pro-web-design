@@ -132,10 +132,10 @@ const LandingPage = () => {
       <div className='HeroTopLayer'>
       <div className='HeroHeaders'>
         <h3 className='CompanyName'>Innovo Pro Web Design</h3>
-        <h1 className='H1'> Custom Website Solutions to <br />Boost Online Presence</h1>
+        <h1 className='H1'> Innovative Websites that <br />Bring Customers to You!</h1>
       </div>
       <p className='HeroParagraph'>Helping the world discover you!</p>
-      <div className='HeroCTA'><a className='CTA' onClick={FormScroll}>Book a Call!</a></div>
+      <div className='HeroCTA'><a className='CTA' onClick={FormScroll}>Contact Us</a></div>
       </div>
      
     </section>
@@ -178,7 +178,7 @@ const LandingPage = () => {
             </div> */}
             
           </div>
-          <button className='CTA WhatWeDo-CTA' onClick={FormScroll}>Book A Call</button>
+          <button className='CTA WhatWeDo-CTA' onClick={FormScroll}>Contact Us</button>
         </div>
     </section>
     <section id='About' className='Innovo-Pro-Story'>
@@ -197,7 +197,7 @@ const LandingPage = () => {
           
           We have helped customers not only create a beautiful site but also <span>see results within the first 3 months of us taking care of their site. </span> 
           If you're looking to work with someone who will take personal care of your project, we will do that for you!</p>
-        <a className='CTA' onClick={FormScroll}>Book a Call!</a>
+        <a className='CTA' onClick={FormScroll}>Contact Us</a>
       </div>
     </section>
     <section id='Process'>
@@ -433,7 +433,7 @@ const LandingPage = () => {
           </div>
           <div className='Pricing-Item-Price'>
               <h5>Get A Free Quote</h5>
-              <a className='CTA Pricing-CTA' onClick={FormScroll}>Book A Call!</a>
+              <a className='CTA Pricing-CTA' onClick={FormScroll}>Contact Us!</a>
           </div>
         </div>
         <div className='Pricing-Item'>
@@ -449,8 +449,8 @@ const LandingPage = () => {
             </ul>
           </div>
           <div className='Pricing-Item-Price'>
-              <h5>$150/month</h5>
-              <a className='CTA Pricing-CTA' onClick={FormScroll}>Book A Call!</a>
+              <h5>Starting $150/month</h5>
+              <a className='CTA Pricing-CTA' onClick={FormScroll}>Contact Us!</a>
           </div>
         </div>
       </div>

@@ -48,6 +48,13 @@ const Intro = () => {
                 <br /><p>I have an educational background in graphic and digital design. Completing a 2 Year Certification course in Computer Graphics in Vocational School in 2019 and attaining a Bachelors in Digital Media and Marketing in 2022, I use my design knowledge to help me create an enjoyable experience for my users. <br /> After college, I took a deep dive into design focusing more on UX/UI Design which led to my introduction to Front End Development. </p>
 
                 <br /><p>My goal is to continue to grow as a designer and developer. I am always looking for new opportunities to learn and grow in the tech industry. Putting my skills to use to improve the experiences of technology. I am excited to see where this journey takes me.</p>
+
+                <h3>Professional Background:</h3>
+                <ul>
+                    <li>Web Designer/Developer</li>
+                    <li>UX/UI Designer</li>
+                    <li>Front End Developer</li>
+                </ul>
             </div>
         </div>
         </div>

@@ -102,7 +102,7 @@ const NavBar = () => {
                     <a className="NavItem" onClick={AboutScroll}>About</a>
                     <a className="NavItem" onClick={PricingScroll}>Pricing</a>
                 </div>
-                <a className="CTA" onClick={FormScroll}>Book a Call!</a>
+                <a className="CTA" onClick={FormScroll}>Contact Us</a>
             </div>
         </div>
 
